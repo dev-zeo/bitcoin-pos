@@ -1,12 +1,12 @@
 Bitcoin PoS Core integration/staging tree
 =====================================
 
-https://bitcoinpos.net
+[Bitcoin Proof of Stake](https://www.bitcoinpos.net)
 
 What is Bitcoin PoS?
 ----------------
 
-Bitcoin PoS is an experimental digital currency that enables instant payments to
+[Bitcoin PoS](https://www.bitcoinpos.net) is an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. Bitcoin PoS uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Bitcoin PoS Core is the name of open source
@@ -32,9 +32,9 @@ information or see https://opensource.org/licenses/MIT.
 Development Process
 -------------------
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
+The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
 completely stable. [Tags](https://github.com/bitcoin-pos/bitcoin-pos/tags) are created
-regularly to indicate new official, stable release versions of Bitcoin PoS Core.
+regularly from release branches to indicate new official, stable release versions of Bitcoin PoS Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
