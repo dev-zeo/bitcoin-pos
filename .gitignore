@@ -2,15 +2,15 @@
 
 *.exe
 *.pdb
-src/bitcoin
-src/bitcoin-posd
-src/bitcoin-pos-cli
-src/bitcoin-pos-tx
-src/bitcoin-pos-wallet
+src/zeo
+src/zeod
+src/zeo-cli
+src/zeo-tx
+src/zeo-wallet
 src/test/fuzz
 !src/test/fuzz/*.*
-src/test/test_bitcoin
-src/qt/test/test_bitcoin-qt
+src/test/test_zeo
+src/qt/test/test_zeo-qt
 
 # autoreconf
 Makefile.in
@@ -34,8 +34,8 @@ config.log
 config.status
 configure
 libtool
-src/config/bitcoin-config.h
-src/config/bitcoin-config.h.in
+src/config/zeo-config.h
+src/config/zeo-config.h.in
 src/config/stamp-h1
 src/obj
 share/setup.nsi
@@ -49,11 +49,11 @@ src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
 
-src/qt/bitcoin-qt.config
-src/qt/bitcoin-qt.creator
-src/qt/bitcoin-qt.creator.user
-src/qt/bitcoin-qt.files
-src/qt/bitcoin-qt.includes
+src/qt/zeo-qt.config
+src/qt/zeo-qt.creator
+src/qt/zeo-qt.creator.user
+src/qt/zeo-qt.files
+src/qt/zeo-qt.includes
 
 .deps
 .dirstamp
@@ -90,8 +90,8 @@ src/qt/bitcoin-qt.includes
 *.qm
 Makefile
 !depends/Makefile
-src/qt/bitcoin-pos-qt
-Bitcoin-POS-Qt.app
+src/qt/zeo-qt
+Zeo-Qt.app
 background.tiff*
 
 # Qt Creator
@@ -99,7 +99,7 @@ Makefile.am.user
 
 # Unit-tests
 Makefile.test
-bitcoin-qt_test
+zeo-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -115,7 +115,7 @@ releases
 *.gcno
 *.gcda
 /*.info
-test_bitcoin.coverage/
+test_zeo.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -130,7 +130,7 @@ test/cache/*
 
 /doc/doxygen/
 
-libbitcoinconsensus.pc
+libzeoconsensus.pc
 contrib/devtools/split-debug.sh
 
 # Output from running db4 installation

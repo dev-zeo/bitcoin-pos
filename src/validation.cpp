@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The Bitcoin Core developers
+// Copyright (c) 2009-2020 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -56,7 +56,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Bitcoin cannot be compiled without assertions."
+# error "Zeo cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -779,7 +779,7 @@ bool MemPoolAccept::PreChecks(ATMPArgs& args, Workspace& ws)
         // being able to broadcast descendants of an unconfirmed transaction
         // to be secure by simply only having two immediately-spendable
         // outputs - one for each counterparty. For more info on the uses for
-        // this, see https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-November/016518.html
+        // this, see https://lists.linuxfoundation.org/pipermail/zeo-dev/2018-November/016518.html
         if (nSize >  EXTRA_DESCENDANT_TX_SIZE_LIMIT ||
                 !m_pool.CalculateMemPoolAncestors(*entry, setAncestors, 2, m_limit_ancestor_size, m_limit_descendants + 1, m_limit_descendant_size + EXTRA_DESCENDANT_TX_SIZE_LIMIT, dummy_err_string)) {
             return state.Invalid(TxValidationResult::TX_MEMPOOL_POLICY, "too-long-mempool-chain", errString);
@@ -1291,27 +1291,20 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     CAmount nSubsidy = 50 * COIN;
-
-    int reductions = (nHeight - 1) / consensusParams.BPSRewardMatchStep;
-
-    if (reductions <= 3)
-    {
-        // Halve the reward - right shift
-        nSubsidy >>= reductions;
-    }
-    else
-    {
-        nSubsidy >>= 3;
-        reductions = (nHeight - consensusParams.BPSRewardMatchHeight - 1) / consensusParams.nSubsidyHalvingInterval;
-
-        // Force block reward to zero at some point
-        if (reductions >= 64)
+    if (nHeight == 1)  {
+        nSubsidy = PREMINE_COIN;
+    } else {
+       int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+        // Force block reward to zero when right shift is undefined.
+        if (halvings >= 64)
             return 0;
 
-        // Subsidy is reduced by 25% every 700,000 blocks which will occur approximately every 4 years.
-        nSubsidy *= pow(0.75, reductions);
+        CAmount nSubsidy = 50 * COIN;
+        // Subsidy is cut in half every 831,600 blocks
+        nSubsidy >>= halvings;
+        return nSubsidy;
+            
     }
-
     return nSubsidy;
 }
 
@@ -5346,7 +5339,7 @@ bool LoadExternalBlockFile(const CChainParams& chainparams, FILE* fileIn, FlatFi
                     }
                 }
 
-                // In Bitcoin POW this only needed to be done for genesis and at the end of block indexing
+                // In Zeo POW this only needed to be done for genesis and at the end of block indexing
                 // For POS we need to sync this after every block to ensure txdb is populated for validating PoS proofs
                 {
                     BlockValidationState state;

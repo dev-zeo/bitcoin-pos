@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2019 The Bitcoin Core developers
+// Copyright (c) 2011-2019 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +8,7 @@
 #include <qt/forms/ui_receivecoinsdialog.h>
 
 #include <qt/addresstablemodel.h>
-#include <qt/bitcoinaddresstypes.h>
+#include <qt/zeoaddresstypes.h>
 #include <qt/optionsmodel.h>
 #include <qt/platformstyle.h>
 #include <qt/receiverequestdialog.h>
@@ -93,15 +93,15 @@ void ReceiveCoinsDialog::setModel(WalletModel *_model)
         // Last 2 columns are set by the columnResizingFixer, when the table geometry is ready.
         columnResizingFixer = new GUIUtil::TableViewLastColumnResizingFixer(tableView, AMOUNT_MINIMUM_COLUMN_WIDTH, DATE_COLUMN_WIDTH, this);
 
-        ui->addressTypeSelector->setModel(new BitcoinAddressTypes(this));
+        ui->addressTypeSelector->setModel(new ZeoAddressTypes(this));
         
         // user explicitly set the type, use it
         if (model->wallet().getDefaultAddressType() == OutputType::BECH32) {
-            ui->addressTypeSelector->setCurrentIndex(BitcoinAddressType::NATIVE_SEGWIT);
+            ui->addressTypeSelector->setCurrentIndex(ZeoAddressType::NATIVE_SEGWIT);
         } else if (model->wallet().getDefaultAddressType() == OutputType::P2SH_SEGWIT){
-            ui->addressTypeSelector->setCurrentIndex(BitcoinAddressType::NESTED_SEGWIT);
+            ui->addressTypeSelector->setCurrentIndex(ZeoAddressType::NESTED_SEGWIT);
         } else {
-            ui->addressTypeSelector->setCurrentIndex(BitcoinAddressType::LEGACY);
+            ui->addressTypeSelector->setCurrentIndex(ZeoAddressType::LEGACY);
         }
 
         // Set the button to be enabled or disabled based on whether the wallet can give out new addresses.
@@ -154,10 +154,10 @@ void ReceiveCoinsDialog::on_receiveButton_clicked()
     QString label = ui->reqLabel->text();
     /* Generate new receiving address */
     OutputType address_type;
-    BitcoinAddressType address_type_selected = (BitcoinAddressType)ui->addressTypeSelector->currentIndex();
-    if (BitcoinAddressType::NATIVE_SEGWIT == address_type_selected) {
+    ZeoAddressType address_type_selected = (ZeoAddressType)ui->addressTypeSelector->currentIndex();
+    if (ZeoAddressType::NATIVE_SEGWIT == address_type_selected) {
         address_type = OutputType::BECH32;
-    } else if (BitcoinAddressType::NESTED_SEGWIT == address_type_selected) {
+    } else if (ZeoAddressType::NESTED_SEGWIT == address_type_selected) {
         address_type = OutputType::P2SH_SEGWIT;
     } else {
         address_type = OutputType::LEGACY;
@@ -281,7 +281,7 @@ void ReceiveCoinsDialog::copyURI()
     }
 
     const RecentRequestsTableModel * const submodel = model->getRecentRequestsTableModel();
-    const QString uri = GUIUtil::formatBitcoinURI(submodel->entry(sel.row()).recipient);
+    const QString uri = GUIUtil::formatZeoURI(submodel->entry(sel.row()).recipient);
     GUIUtil::setClipboard(uri);
 }
 

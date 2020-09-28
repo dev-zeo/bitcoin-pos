@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SCRIPT_INTERPRETER_H
-#define BITCOIN_SCRIPT_INTERPRETER_H
+#ifndef ZEO_SCRIPT_INTERPRETER_H
+#define ZEO_SCRIPT_INTERPRETER_H
 
 #include <script/script_error.h>
 #include <primitives/transaction.h>
@@ -197,4 +197,4 @@ bool IsLowDERSignature(const valtype &vchSig, ScriptError* serror = NULL, bool h
 bool IsDERSignature(const valtype &vchSig, ScriptError* serror = NULL, bool haveHashType = true);
 bool IsCompressedOrUncompressedPubKey(const valtype &vchPubKey);
 
-#endif // BITCOIN_SCRIPT_INTERPRETER_H
+#endif // ZEO_SCRIPT_INTERPRETER_H

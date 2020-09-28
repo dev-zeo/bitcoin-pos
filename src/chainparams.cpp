@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -63,9 +63,6 @@ public:
         consensus.CSVHeight = 1;
         consensus.SegwitHeight = 1;
         consensus.MinBIP9WarningHeight = consensus.SegwitHeight + consensus.nMinerConfirmationWindow;
-        consensus.BPSRewardMatchStep = 40000;
-        consensus.BPSRewardMatchHeight = 3 * consensus.BPSRewardMatchStep;
-        consensus.BPSDiffAdjHeight = 130000;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 10 * 3 * 60; // every 10 blocks
@@ -75,7 +72,7 @@ public:
         consensus.fPoSNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
-        consensus.nLastPOWBlock = 5000;
+        consensus.nLastPOWBlock = 1000;
         consensus.nMPoSRewardRecipients = 10;
         consensus.nFirstMPoSBlock = consensus.nLastPOWBlock + 
                                     consensus.nMPoSRewardRecipients + 
@@ -87,20 +84,20 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000025441d95cb16f423"); //block 128654
+        consensus.nMinimumChainWork = uint256S("0x0"); //block 128654
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xb8a8fd8f3a8cbab7f1d2e5d431eab19610ec83d4f6e421f87fa238b1d91e2f92"); //block 128654
+        consensus.defaultAssumeValid = uint256S("0x0"); //block 128654
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x9e;
-        pchMessageStart[1] = 0xf1;
-        pchMessageStart[2] = 0x2c;
-        pchMessageStart[3] = 0x1e;
+        pchMessageStart[0] = 0xde;
+        pchMessageStart[1] = 0x1a;
+        pchMessageStart[2] = 0x4f;
+        pchMessageStart[3] = 0x9d;
         nDefaultPort = 48930;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 2;
@@ -116,20 +113,20 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("seed1.bitcoinpos.net");
-        vSeeds.emplace_back("seed2.bitcoinpos.net");
-        vSeeds.emplace_back("seed3.bitcoinpos.net");
-        vSeeds.emplace_back("seed4.bitcoinpos.net");
-        vSeeds.emplace_back("seed5.bitcoinpos.net");
-        vSeeds.emplace_back("seed6.bitcoinpos.net");
+        vSeeds.emplace_back("seed1.zeo.net");
+        vSeeds.emplace_back("seed2.zeo.net");
+        vSeeds.emplace_back("seed3.zeo.net");
+        vSeeds.emplace_back("seed4.zeo.net");
+        vSeeds.emplace_back("seed5.zeo.net");
+        vSeeds.emplace_back("seed6.zeo.net");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,8);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,18);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,80);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,142);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
-        base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
-        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
+        base58Prefixes[EXT_PUBLIC_KEY] = {0x77, 0xE3, 0x2D, 0x19};
+        base58Prefixes[EXT_SECRET_KEY] = {0x4A, 0x66, 0xB2, 0xE8};
 
-        bech32_hrp = "bp";
+        bech32_hrp = "zeo";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -139,20 +136,20 @@ public:
         m_is_mockable_chain = false;
 
         checkpointData = {
-            {
+            /*{
                 { 0, uint256S("0x00000bcd2d9ccbb28606a8b2d962b97394f612bf6e021ce1d64d71cecb008029")},
                 { 50000, uint256S("0x9f1a7b15917cbe23bb5dff82e60da8147820c58dea65793be72506c8e6d22b23")},
                 { 87231, uint256S("0xb0836f48bbcf0e675e9957bdc9a73acee32acb50eb6380719d5348df5509ba02")},
                 { 112802,uint256S("0x622a541f3292d61d8e6ee1d0288a98f8ec6fabbc25e14f7fa33540f1fa65b97a")},
                 { 128654,uint256S("0xb8a8fd8f3a8cbab7f1d2e5d431eab19610ec83d4f6e421f87fa238b1d91e2f92")}
-            }
+            }*/
         };
 
         chainTxData = ChainTxData{
             // Data from RPC: getchaintxstats 128653 b8a8fd8f3a8cbab7f1d2e5d431eab19610ec83d4f6e421f87fa238b1d91e2f92
-            /* nTime    */ 1592298384,
-            /* nTxCount */ 269970,
-            /* dTxRate  */ 0.06961917921120889,
+            /* nTime     1592298384,*/
+            /* nTxCount  269970,*/
+            /* dTxRate   0.06961917921120889,*/
         };
     }
 };
@@ -173,9 +170,6 @@ public:
         consensus.CSVHeight = 1;
         consensus.SegwitHeight = 1;
         consensus.MinBIP9WarningHeight = consensus.SegwitHeight + consensus.nMinerConfirmationWindow;
-        consensus.BPSRewardMatchStep = 400;
-        consensus.BPSRewardMatchHeight = 3 * consensus.BPSRewardMatchStep;
-        consensus.BPSDiffAdjHeight = 1500;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 10 * 3 * 60; // every 10 blocks
@@ -219,8 +213,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed1.bitcoinpos.net");
-        vSeeds.emplace_back("testnet-seed2.bitcoinpos.net");
+        vSeeds.emplace_back("testnet-seed1.zeo.net");
+        vSeeds.emplace_back("testnet-seed2.zeo.net");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,78);
@@ -268,9 +262,6 @@ public:
         consensus.CSVHeight = 432; // CSV activated on regtest (Used in rpc activation tests)
         consensus.SegwitHeight = 0; // SEGWIT is always activated on regtest unless overridden
         consensus.MinBIP9WarningHeight = 0;
-        consensus.BPSRewardMatchStep = 400;
-        consensus.BPSRewardMatchHeight = 3 * consensus.BPSRewardMatchStep;
-        consensus.BPSDiffAdjHeight = 1500;
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 10 * 3 * 60; // every 10 blocks

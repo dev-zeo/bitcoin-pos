@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The Bitcoin Core developers
+// Copyright (c) 2009-2020 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NET_PROCESSING_H
-#define BITCOIN_NET_PROCESSING_H
+#ifndef ZEO_NET_PROCESSING_H
+#define ZEO_NET_PROCESSING_H
 
 #include <consensus/consensus.h>
 #include <consensus/params.h>
@@ -117,4 +117,4 @@ void RelayTransaction(const uint256&, const CConnman& connman);
 /** Clean block index */
 void CleanBlockIndex();
 
-#endif // BITCOIN_NET_PROCESSING_H
+#endif // ZEO_NET_PROCESSING_H

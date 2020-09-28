@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_MINER_H
-#define BITCOIN_MINER_H
+#ifndef ZEO_MINER_H
+#define ZEO_MINER_H
 
 #include <optional.h>
 #include <primitives/block.h>
@@ -225,4 +225,4 @@ int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParam
 void StakeBPSs(bool fStake, CWallet *pwallet, CConnman* connman, CTxMemPool* mempool, boost::thread_group*& stakeThread);
 #endif
 
-#endif // BITCOIN_MINER_H
+#endif // ZEO_MINER_H

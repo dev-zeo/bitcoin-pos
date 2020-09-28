@@ -1,12 +1,12 @@
-// Copyright (c) 2014-2019 The Bitcoin Core developers
+// Copyright (c) 2014-2019 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_ZMQ_ZMQCONFIG_H
-#define BITCOIN_ZMQ_ZMQCONFIG_H
+#ifndef ZEO_ZMQ_ZMQCONFIG_H
+#define ZEO_ZMQ_ZMQCONFIG_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/zeo-config.h>
 #endif
 
 #include <stdarg.h>
@@ -19,4 +19,4 @@
 
 void zmqError(const char *str);
 
-#endif // BITCOIN_ZMQ_ZMQCONFIG_H
+#endif // ZEO_ZMQ_ZMQCONFIG_H

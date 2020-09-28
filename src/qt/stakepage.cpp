@@ -1,11 +1,11 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <qt/stakepage.h>
 #include <qt/forms/ui_stakepage.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/zeounits.h>
 #include <qt/clientmodel.h>
 #include <qt/guiconstants.h>
 #include <qt/guiutil.h>
@@ -90,10 +90,10 @@ void StakePage::setBalance(const interfaces::WalletBalances& balances)
 {
     int unit = walletModel->getOptionsModel()->getDisplayUnit();
     m_balances = balances;
-    ui->labelAssets->setText(BitcoinUnits::formatWithUnit(unit, balances.stakeable, false, BitcoinUnits::separatorAlways));
-    ui->labelAssetsImmature->setText(BitcoinUnits::formatWithUnit(unit, balances.immature_stakeable, false, BitcoinUnits::separatorAlways));
+    ui->labelAssets->setText(ZeoUnits::formatWithUnit(unit, balances.stakeable, false, ZeoUnits::separatorAlways));
+    ui->labelAssetsImmature->setText(ZeoUnits::formatWithUnit(unit, balances.immature_stakeable, false, ZeoUnits::separatorAlways));
     ui->labelAssetsImmature->setVisible(balances.immature_stakeable != 0);
-    ui->labelStake->setText(BitcoinUnits::formatWithUnit(unit, balances.stake, false, BitcoinUnits::separatorAlways));
+    ui->labelStake->setText(ZeoUnits::formatWithUnit(unit, balances.stake, false, ZeoUnits::separatorAlways));
 }
 
 void StakePage::on_checkStake_clicked(bool checked)
@@ -122,7 +122,7 @@ void StakePage::numBlocksChanged(int count, const QDateTime &, double, bool head
 {
     if(!headers && clientModel && walletModel)
     {
-        ui->labelHeight->setText(BitcoinUnits::formatInt(count));
+        ui->labelHeight->setText(ZeoUnits::formatInt(count));
         m_subsidy = clientModel->node().getBlockSubsidy(count);
         m_networkWeight = clientModel->node().getNetworkStakeWeight();
         m_expectedAnnualROI = clientModel->node().getEstimatedAnnualROI();
@@ -135,13 +135,13 @@ void StakePage::numBlocksChanged(int count, const QDateTime &, double, bool head
 void StakePage::updateSubsidy()
 {
     int unit = walletModel->getOptionsModel()->getDisplayUnit();
-    QString strSubsidy = BitcoinUnits::formatWithUnit(unit, m_subsidy, false, BitcoinUnits::separatorAlways) + "/Block";
+    QString strSubsidy = ZeoUnits::formatWithUnit(unit, m_subsidy, false, ZeoUnits::separatorAlways) + "/Block";
     ui->labelReward->setText(strSubsidy);
 }
 
 void StakePage::updateNetworkWeight()
 {
-    ui->labelWeight->setText(BitcoinUnits::formatInt(m_networkWeight / COIN));
+    ui->labelWeight->setText(ZeoUnits::formatInt(m_networkWeight / COIN));
 }
 
 void StakePage::updateAnnualROI()

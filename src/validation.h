@@ -1,13 +1,13 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The Bitcoin Core developers
+// Copyright (c) 2009-2020 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_VALIDATION_H
-#define BITCOIN_VALIDATION_H
+#ifndef ZEO_VALIDATION_H
+#define ZEO_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/zeo-config.h>
 #endif
 
 #include <amount.h>
@@ -881,4 +881,4 @@ struct CHeightTxIndexKey {
     }
 };
 
-#endif // BITCOIN_VALIDATION_H
+#endif // ZEO_VALIDATION_H

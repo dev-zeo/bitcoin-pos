@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_AMOUNT_H
-#define BITCOIN_AMOUNT_H
+#ifndef ZEO_AMOUNT_H
+#define ZEO_AMOUNT_H
 
 #include <stdint.h>
 
@@ -16,7 +16,7 @@ static const CAmount CENT = 1000000;
 
 /** No amount larger than this (in satoshi) is valid.
  *
- * Note that this constant is *not* the total money supply, which in Bitcoin
+ * Note that this constant is *not* the total money supply, which in Zeo
  * currently happens to be less than 21,000,000 BPS for various reasons, but
  * rather a sanity check. As this sanity check is used by consensus-critical
  * validation code, the exact value of the MAX_MONEY constant is consensus
@@ -24,6 +24,8 @@ static const CAmount CENT = 1000000;
  * for the creation of coins out of thin air modification could lead to a fork.
  * */
 static const CAmount MAX_MONEY = 21000000 * COIN;
+static const CAmount PREMINE_COIN = 1000000 * COIN;
+
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
-#endif //  BITCOIN_AMOUNT_H
+#endif //  ZEO_AMOUNT_H

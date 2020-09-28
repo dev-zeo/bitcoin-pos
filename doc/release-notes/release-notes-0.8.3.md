@@ -1,11 +1,11 @@
-Bitcoin-Qt version 0.8.3 is now available from:
-  http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.8.3/
+Zeo-Qt version 0.8.3 is now available from:
+  http://sourceforge.net/projects/zeo/files/Zeo/zeo-0.8.3/
 
 This is a maintenance release to fix a denial-of-service attack that
 can cause nodes to crash.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/bitcoin/bitcoin/issues
+  https://github.com/zeo/zeo/issues
 
 0.8.3 Release notes
 

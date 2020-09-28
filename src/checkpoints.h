@@ -1,9 +1,9 @@
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The coinBit Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHECKPOINTS_H
-#define BITCOIN_CHECKPOINTS_H
+#ifndef ZEO_CHECKPOINTS_H
+#define ZEO_CHECKPOINTS_H
 
 #include <uint256.h>
 
@@ -32,4 +32,4 @@ const CBlockIndex* AutoSelectSyncCheckpoint();
 bool CheckSync(int nHeight);
 } //namespace Checkpoints
 
-#endif // BITCOIN_CHECKPOINTS_H
+#endif // ZEO_CHECKPOINTS_H

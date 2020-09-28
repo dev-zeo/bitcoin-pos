@@ -1,0 +1,33 @@
+# /etc/conf.d/zeod: config file for /etc/init.d/zeod
+
+# Config file location
+#ZEOD_CONFIGFILE="/etc/zeo/zeo.conf"
+
+# What directory to write pidfile to?  (created and owned by $ZEOD_USER)
+#ZEOD_PIDDIR="/var/run/zeod"
+
+# What filename to give the pidfile
+#ZEOD_PIDFILE="${ZEOD_PIDDIR}/zeod.pid"
+
+# Where to write zeod data (be mindful that the blockchain is large)
+#ZEOD_DATADIR="/var/lib/zeod"
+
+# User and group to own zeod process
+#ZEOD_USER="zeo"
+#ZEOD_GROUP="zeo"
+
+# Path to zeod executable
+#ZEOD_BIN="/usr/bin/zeod"
+
+# Nice value to run zeod under
+#ZEOD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#ZEOD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for zeod to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+ZEOD_SIGTERM_TIMEOUT=600

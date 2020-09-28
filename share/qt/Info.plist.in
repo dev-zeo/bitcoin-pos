@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>bitcoin.icns</string>
+  <string>zeo.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Bitcoin-POS-Qt</string>
+  <string>Zeo-Qt</string>
 
   <key>CFBundleName</key>
-  <string>Bitcoin-POS-Qt</string>
+  <string>Zeo-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>net.bitcoinpos.Bitcoin-POS-Qt</string>
+  <string>net.zeo.Zeo-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>net.bitcoinpos.BitcoinPOSPayment</string>
+      <string>net.zeo.ZeoPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>bitcoinpos</string>
+        <string>zeo</string>
       </array>
     </dict>
   </array>
