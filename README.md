@@ -20,8 +20,8 @@ terms of power consumption, but it is also lowering the entry barrier for contri
 to the creation of new blocks.
 
 For more information, as well as an immediately usable, binary version of
-the Zeo Core software, see https://www.zeo.net/#wallet-bps, or read the
-[original whitepaper](https://www.zeo.net/WhitePaperBPS.pdf).
+the Zeo Core software, see https://www.zeo.net/#wallet-zeo, or read the
+[original whitepaper](https://www.zeo.net/WhitePaperZEO.pdf).
 
 License
 -------

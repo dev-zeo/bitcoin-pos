@@ -531,7 +531,7 @@ void ThreadStakeMiner(CWallet *pwallet, CConnman* connman, CTxMemPool* mempool)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    std::string threadName = "bpsstake";
+    std::string threadName = "zeostake";
     if (pwallet && pwallet->GetName() != "")
     {
         threadName = threadName + "-" + pwallet->GetName();
@@ -561,14 +561,14 @@ void ThreadStakeMiner(CWallet *pwallet, CConnman* connman, CTxMemPool* mempool)
         }
         // Don't disable PoS mining for no connections if in regtest mode
         if (!regtestMode && !gArgs.GetBoolArg("-emergencystaking", false)) {
-            while (connman->GetNodeCount(CConnman::CONNECTIONS_ALL) < 4 || ::ChainstateActive().IsInitialBlockDownload()) {
+            while (connman->GetNodeCount(CConnman::CONNECTIONS_ALL) < 2 || ::ChainstateActive().IsInitialBlockDownload()) {
                 pwallet->m_last_coin_stake_search_interval = 0;
                 fTryToSync = true;
                 UninterruptibleSleep(std::chrono::milliseconds{1000});
             }
             if (fTryToSync) {
                 fTryToSync = false;
-                if (connman->GetNodeCount(CConnman::CONNECTIONS_ALL) < 4 ||
+                if (connman->GetNodeCount(CConnman::CONNECTIONS_ALL) < 2 ||
                     ::ChainActive().Tip()->GetBlockTime() < GetTime() - Params().GetConsensus().nPowTargetSpacing ||
                     !::ChainActive().Tip()->HaveTxsDownloaded() ||
                     !::ChainActive().Tip()->IsValid(BLOCK_VALID_TRANSACTIONS)) {
@@ -689,7 +689,7 @@ void ThreadStakeMiner(CWallet *pwallet, CConnman* connman, CTxMemPool* mempool)
     }
 }
 
-void StakeBPSs(bool fStake, CWallet *pwallet, CConnman* connman, CTxMemPool* mempool, boost::thread_group*& stakeThread)
+void StakeZEOs(bool fStake, CWallet *pwallet, CConnman* connman, CTxMemPool* mempool, boost::thread_group*& stakeThread)
 {
     if (stakeThread != nullptr)
     {

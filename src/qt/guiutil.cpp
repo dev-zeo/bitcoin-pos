@@ -153,7 +153,7 @@ bool parseZeoURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!ZeoUnits::parse(ZeoUnits::BPS, i->second, &rv.amount))
+                if(!ZeoUnits::parse(ZeoUnits::ZEO, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -186,7 +186,7 @@ QString formatZeoURI(const SendCoinsRecipient &info)
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(ZeoUnits::format(ZeoUnits::BPS, info.amount, false, ZeoUnits::separatorNever));
+        ret += QString("?amount=%1").arg(ZeoUnits::format(ZeoUnits::ZEO, info.amount, false, ZeoUnits::separatorNever));
         paramCount++;
     }
 

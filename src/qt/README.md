@@ -60,7 +60,7 @@ Represents the view to a single wallet.
 
 * UI elements like ZeoAmountField, which inherit from QWidget.
 * `zeostrings.cpp`: automatically generated
-* `zeounits.(h/cpp)`: BPS / mBPS / etc handling
+* `zeounits.(h/cpp)`: ZEO / mZEO / etc handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc
 * `guiutil.h`: several helper functions

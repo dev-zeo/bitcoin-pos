@@ -40,9 +40,9 @@ public:
      */
     enum Unit
     {
-        BPS,
-        mBPS,
-        uBPS,
+        ZEO,
+        mZEO,
+        uZEO,
         SAT
     };
 

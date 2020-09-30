@@ -15,9 +15,9 @@ ZeoUnits::ZeoUnits(QObject *parent):
 QList<ZeoUnits::Unit> ZeoUnits::availableUnits()
 {
     QList<ZeoUnits::Unit> unitlist;
-    unitlist.append(BPS);
-    unitlist.append(mBPS);
-    unitlist.append(uBPS);
+    unitlist.append(ZEO);
+    unitlist.append(mZEO);
+    unitlist.append(uZEO);
     unitlist.append(SAT);
     return unitlist;
 }
@@ -26,9 +26,9 @@ bool ZeoUnits::valid(int unit)
 {
     switch(unit)
     {
-    case BPS:
-    case mBPS:
-    case uBPS:
+    case ZEO:
+    case mZEO:
+    case uZEO:
     case SAT:
         return true;
     default:
@@ -40,9 +40,9 @@ QString ZeoUnits::longName(int unit)
 {
     switch(unit)
     {
-    case BPS: return QString("BPS");
-    case mBPS: return QString("mBPS");
-    case uBPS: return QString::fromUtf8("µBPS (bits)");
+    case ZEO: return QString("ZEO");
+    case mZEO: return QString("mZEO");
+    case uZEO: return QString::fromUtf8("µZEO (bits)");
     case SAT: return QString("Satoshi (sat)");
     default: return QString("???");
     }
@@ -52,7 +52,7 @@ QString ZeoUnits::shortName(int unit)
 {
     switch(unit)
     {
-    case uBPS: return QString::fromUtf8("bits");
+    case uZEO: return QString::fromUtf8("bits");
     case SAT: return QString("sat");
     default: return longName(unit);
     }
@@ -62,9 +62,9 @@ QString ZeoUnits::description(int unit)
 {
     switch(unit)
     {
-    case BPS: return QString("Zeos");
-    case mBPS: return QString("Milli-Zeos (1 / 1" THIN_SP_UTF8 "000)");
-    case uBPS: return QString("Micro-Zeos (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case ZEO: return QString("Zeos");
+    case mZEO: return QString("Milli-Zeos (1 / 1" THIN_SP_UTF8 "000)");
+    case uZEO: return QString("Micro-Zeos (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
@@ -74,9 +74,9 @@ qint64 ZeoUnits::factor(int unit)
 {
     switch(unit)
     {
-    case BPS: return 100000000;
-    case mBPS: return 100000;
-    case uBPS: return 100;
+    case ZEO: return 100000000;
+    case mZEO: return 100000;
+    case uZEO: return 100;
     case SAT: return 1;
     default: return 100000000;
     }
@@ -86,9 +86,9 @@ int ZeoUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BPS: return 8;
-    case mBPS: return 5;
-    case uBPS: return 2;
+    case ZEO: return 8;
+    case mZEO: return 5;
+    case uZEO: return 2;
     case SAT: return 0;
     default: return 0;
     }

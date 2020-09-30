@@ -2354,7 +2354,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Creates a Partially Signed Zeo Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation>Crée une transaction Zeo partiellement signée (TBPS) à utiliser, par exemple, avec un porte-monnaie %1 hors ligne ou avec un porte-monnaie matériel compatible TBPS.</translation>
+        <translation>Crée une transaction Zeo partiellement signée (TZEO) à utiliser, par exemple, avec un porte-monnaie %1 hors ligne ou avec un porte-monnaie matériel compatible TZEO.</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -2378,7 +2378,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Please, review your transaction proposal. This will produce a Partially Signed Zeo Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation>Veuillez réviser votre proposition de transaction. Une transaction Zeo partiellement signée (TBPS) sera produite, que vous pourrez copier puis signer avec, par exemple, un porte-monnaie %1 hors ligne ou avec un porte-monnaie matériel compatible TBPS.</translation>
+        <translation>Veuillez réviser votre proposition de transaction. Une transaction Zeo partiellement signée (TZEO) sera produite, que vous pourrez copier puis signer avec, par exemple, un porte-monnaie %1 hors ligne ou avec un porte-monnaie matériel compatible TZEO.</translation>
     </message>
     <message>
         <source>or</source>
@@ -2418,7 +2418,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Copy PSBT to clipboard</source>
-        <translation>Copier la TBPS dans le presse-papiers</translation>
+        <translation>Copier la TZEO dans le presse-papiers</translation>
     </message>
     <message>
         <source>Send</source>
@@ -2426,7 +2426,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>PSBT copied</source>
-        <translation>La TBPS a été copiée</translation>
+        <translation>La TZEO a été copiée</translation>
     </message>
     <message>
         <source>Watch-only balance:</source>
@@ -3262,7 +3262,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>PSBT copied</source>
-        <translation>La TBPS a été copiée</translation>
+        <translation>La TZEO a été copiée</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>

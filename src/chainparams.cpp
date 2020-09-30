@@ -177,7 +177,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.fPoSNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
+        consensus.nRuleChangeActivationThreshold = 1512; 
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.nLastPOWBlock = 501;
         consensus.nMPoSRewardRecipients = 10;
@@ -196,10 +196,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00000fe2acf48e35c5b594d9ff7db2a7bbafa1b73205b2789a6833be70595818"); // 0
 
-        pchMessageStart[0] = 0xd5;
-        pchMessageStart[1] = 0x1f;
-        pchMessageStart[2] = 0x35;
-        pchMessageStart[3] = 0x29;
+        pchMessageStart[0] = 0xab;
+        pchMessageStart[1] = 0x67;
+        pchMessageStart[2] = 0xd7;
+        pchMessageStart[3] = 0x5c;
         nDefaultPort = 48932;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 40;
@@ -217,12 +217,12 @@ public:
         vSeeds.emplace_back("testnet-seed2.zeo.net");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,78);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,127);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,130);
-        base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
+        base58Prefixes[EXT_PUBLIC_KEY] = {0x90, 0x5C, 0xA4, 0xBC};
+        base58Prefixes[EXT_SECRET_KEY] = {0x90, 0x5C, 0xF0, 0xA3};
 
-        bech32_hrp = "bt";
+        bech32_hrp = "zt";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
@@ -232,9 +232,9 @@ public:
         m_is_mockable_chain = false;
 
         checkpointData = {
-            {
+           /*{
                 {0, uint256S("0x00000fe2acf48e35c5b594d9ff7db2a7bbafa1b73205b2789a6833be70595818")},
-            }
+            }*/
         };
 
         chainTxData = ChainTxData{
@@ -286,10 +286,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
 
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xbf;
-        pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
+        pchMessageStart[0] = 0xaf;
+        pchMessageStart[1] = 0xd5;
+        pchMessageStart[2] = 0x7f;
+        pchMessageStart[3] = 0x1a;
         nDefaultPort = 48934;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 0;
@@ -311,24 +311,24 @@ public:
         m_is_mockable_chain = true;
 
         checkpointData = {
-            {
+            /*{
                 {0, uint256S("0x2b8d445931aa4ea9b52db1488d3641fa2d4f7a3c1f8151bfa99d017493129e97")},
-            }
+            }*/
         };
 
-        chainTxData = ChainTxData{
+        chainTxData = ChainTxData{/*
             1588417200,
             0,
-            0
+            0*/
         };
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,78);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,130);
-        base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
+        base58Prefixes[EXT_PUBLIC_KEY] = {0x16, 0xAF, 0x87, 0xCF};
+        base58Prefixes[EXT_SECRET_KEY] = {0x16, 0xAF, 0x83, 0x94};
 
-        bech32_hrp = "bpt";
+        bech32_hrp = "zrt";
     }
 
     /**

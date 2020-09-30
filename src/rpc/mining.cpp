@@ -379,7 +379,7 @@ static UniValue getstakingstatus(const JSONRPCRequest& request)
 #endif
 
     bool staking = walletStakingEnabled && lastCoinStakeSearchInterval && nWeight;
-    bool hasConnections = g_rpc_node->connman->GetNodeCount(CConnman::CONNECTIONS_ALL) >= 4;
+    bool hasConnections = g_rpc_node->connman->GetNodeCount(CConnman::CONNECTIONS_ALL) >= 2;
     bool isSynced = !::ChainstateActive().IsInitialBlockDownload();
     bool hasCoins = nWeight != 0;
 
@@ -398,7 +398,7 @@ static UniValue getstakingstatus(const JSONRPCRequest& request)
     return obj;
 }
 
-// NOTE: Unlike wallet RPC (which use BPS values), mining RPCs follow GBT (BIP 22) in using satoshi amounts
+// NOTE: Unlike wallet RPC (which use ZEO values), mining RPCs follow GBT (BIP 22) in using satoshi amounts
 static UniValue prioritisetransaction(const JSONRPCRequest& request)
 {
             RPCHelpMan{"prioritisetransaction",
