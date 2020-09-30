@@ -1,12 +1,12 @@
 Zeo Core integration/staging tree
 =====================================
 
-[Zeo Proof of Stake](https://www.zeo.net)
+[Zeo Proof of Stake](https://www.zeocoin.org)
 
 What is Zeo?
 ----------------
 
-[Zeo](https://www.zeo.net) is an digital currency that enables instant payments to
+[Zeo](https://www.zeocoin.org) is an digital currency that enables instant payments to
 anyone, anywhere in the world. Zeo uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Zeo Core is the name of open source
@@ -20,8 +20,8 @@ terms of power consumption, but it is also lowering the entry barrier for contri
 to the creation of new blocks.
 
 For more information, as well as an immediately usable, binary version of
-the Zeo Core software, see https://www.zeo.net/#wallet-zeo, or read the
-[original whitepaper](https://www.zeo.net/WhitePaperZEO.pdf).
+the Zeo Core software, see https://www.zeocoin.org/#wallet-zeo, or read the
+[original whitepaper](https://www.zeocoin.org/WhitePaperZEO.pdf).
 
 License
 -------

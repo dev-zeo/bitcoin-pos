@@ -19,5 +19,5 @@ depending on the speed of your computer and network connection, the synchronizat
 process can take anywhere from a few hours to a day or more.
 
 See the zeo proof of stake FAQs at:
-  https://www.zeo.net
+  https://www.zeocoin.org
 for more help and information.

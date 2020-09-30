@@ -243,8 +243,8 @@ static UniValue addnode(const JSONRPCRequest& request)
                 },
                 RPCResult{RPCResult::Type::NONE, "", ""},
                 RPCExamples{
-                    HelpExampleCli("addnode", "\"192.168.0.6:48930\" \"onetry\"")
-            + HelpExampleRpc("addnode", "\"192.168.0.6:48930\", \"onetry\"")
+                    HelpExampleCli("addnode", "\"192.168.0.6:48830\" \"onetry\"")
+            + HelpExampleRpc("addnode", "\"192.168.0.6:48830\", \"onetry\"")
                 },
             }.ToString());
 
@@ -286,9 +286,9 @@ static UniValue disconnectnode(const JSONRPCRequest& request)
                 },
                 RPCResult{RPCResult::Type::NONE, "", ""},
                 RPCExamples{
-                    HelpExampleCli("disconnectnode", "\"192.168.0.6:48930\"")
+                    HelpExampleCli("disconnectnode", "\"192.168.0.6:48830\"")
             + HelpExampleCli("disconnectnode", "\"\" 1")
-            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:48930\"")
+            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:48830\"")
             + HelpExampleRpc("disconnectnode", "\"\", 1")
                 },
             }.Check(request);

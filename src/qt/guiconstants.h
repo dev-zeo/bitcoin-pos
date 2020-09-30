@@ -43,7 +43,7 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Zeo"
-#define QAPP_ORG_DOMAIN "zeo.net"
+#define QAPP_ORG_DOMAIN "zeocoin.org"
 #define QAPP_APP_NAME_DEFAULT "Zeo-Qt"
 #define QAPP_APP_NAME_TESTNET "Zeo-Qt-testnet"
 #define QAPP_APP_NAME_REGTEST "Zeo-Qt-regtest"

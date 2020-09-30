@@ -84,10 +84,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0"); //block 128654
+        consensus.nMinimumChainWork = uint256S("0x00"); //block 128654
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0"); //block 128654
+        consensus.defaultAssumeValid = uint256S("0x00"); //block 128654
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -98,7 +98,7 @@ public:
         pchMessageStart[1] = 0x1a;
         pchMessageStart[2] = 0x4f;
         pchMessageStart[3] = 0x9d;
-        nDefaultPort = 48930;
+        nDefaultPort = 48830;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 2;
         m_assumed_chain_state_size = 1;
@@ -113,12 +113,12 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("seed1.zeo.net");
-        vSeeds.emplace_back("seed2.zeo.net");
-        vSeeds.emplace_back("seed3.zeo.net");
-        vSeeds.emplace_back("seed4.zeo.net");
-        vSeeds.emplace_back("seed5.zeo.net");
-        vSeeds.emplace_back("seed6.zeo.net");
+        vSeeds.emplace_back("seed1.zeocoin.org");
+        vSeeds.emplace_back("seed2.zeocoin.org");
+        vSeeds.emplace_back("seed3.zeocoin.org");
+        vSeeds.emplace_back("seed4.zeocoin.org");
+        vSeeds.emplace_back("seed5.tokl.io");
+        vSeeds.emplace_back("seed6.tokl.io");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,80);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,142);
@@ -191,16 +191,16 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000fe2acf48e35c5b594d9ff7db2a7bbafa1b73205b2789a6833be70595818"); // 0
+        consensus.defaultAssumeValid = uint256S("0x00"); // 0
 
         pchMessageStart[0] = 0xab;
         pchMessageStart[1] = 0x67;
         pchMessageStart[2] = 0xd7;
         pchMessageStart[3] = 0x5c;
-        nDefaultPort = 48932;
+        nDefaultPort = 48832;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 40;
         m_assumed_chain_state_size = 2;
@@ -213,9 +213,10 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed1.zeo.net");
-        vSeeds.emplace_back("testnet-seed2.zeo.net");
-
+        vSeeds.emplace_back("testnet-seed1.zeocoin.org");
+        vSeeds.emplace_back("testnet-seed2.zeocoin.org");
+        vSeeds.emplace_back("testnet-seed3.tokl.io");
+        vSeeds.emplace_back("testnet-seed4.tokl.io");
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,127);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,130);
@@ -290,7 +291,7 @@ public:
         pchMessageStart[1] = 0xd5;
         pchMessageStart[2] = 0x7f;
         pchMessageStart[3] = 0x1a;
-        nDefaultPort = 48934;
+        nDefaultPort = 48834;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 0;
         m_assumed_chain_state_size = 0;

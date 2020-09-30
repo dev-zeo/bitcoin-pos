@@ -274,7 +274,7 @@
 #define PACKAGE_TARNAME "zeo"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://zeo.net/"
+#define PACKAGE_URL "https://zeocoin.org/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.19.99"
