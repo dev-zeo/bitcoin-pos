@@ -5,12 +5,12 @@
 To quickly get started fuzzing Zeo Core using [libFuzzer](https://llvm.org/docs/LibFuzzer.html):
 
 ```sh
-$ git clone https://github.com/zeo/zeo
+$ git clone https://github.com/dev-zeo/zeo
 $ cd zeo/
 $ ./autogen.sh
 $ CC=clang CXX=clang++ ./configure --enable-fuzz --with-sanitizers=address,fuzzer,undefined
 # macOS users: If you have problem with this step then make sure to read "macOS hints for
-# libFuzzer" on https://github.com/zeo/zeo/blob/master/doc/fuzzing.md#macos-hints-for-libfuzzer
+# libFuzzer" on https://github.com/dev-zeo/zeo/blob/master/doc/fuzzing.md#macos-hints-for-libfuzzer
 $ make
 $ src/test/fuzz/process_message
 # abort fuzzing using ctrl-c
@@ -18,7 +18,7 @@ $ src/test/fuzz/process_message
 
 ## Fuzzing harnesses, fuzzing output and fuzzing corpora
 
-[`process_message`](https://github.com/zeo/zeo/blob/master/src/test/fuzz/process_message.cpp) is a fuzzing harness for the [`ProcessMessage(...)` function (`net_processing`)](https://github.com/zeo/zeo/blob/master/src/net_processing.cpp). The available fuzzing harnesses are found in [`src/test/fuzz/`](https://github.com/zeo/zeo/tree/master/src/test/fuzz).
+[`process_message`](https://github.com/dev-zeo/zeo/blob/master/src/test/fuzz/process_message.cpp) is a fuzzing harness for the [`ProcessMessage(...)` function (`net_processing`)](https://github.com/dev-zeo/zeo/blob/master/src/net_processing.cpp). The available fuzzing harnesses are found in [`src/test/fuzz/`](https://github.com/dev-zeo/zeo/tree/master/src/test/fuzz).
 
 The fuzzer will output `NEW` every time it has created a test input that covers new areas of the code under test. For more information on how to interpret the fuzzer output, see the [libFuzzer documentation](https://llvm.org/docs/LibFuzzer.html).
 
@@ -93,7 +93,7 @@ example using `brew install llvm`.
 
 Should you run into problems with the address sanitizer, it is possible you
 may need to run `./configure` with `--disable-asm` to avoid errors
-with certain assembly code from Zeo Core's code. See [developer notes on sanitizers](https://github.com/zeo/zeo/blob/master/doc/developer-notes.md#sanitizers)
+with certain assembly code from Zeo Core's code. See [developer notes on sanitizers](https://github.com/dev-zeo/zeo/blob/master/doc/developer-notes.md#sanitizers)
 for more information.
 
 You may also need to take care of giving the correct path for `clang` and
@@ -115,7 +115,7 @@ Read the [libFuzzer documentation](https://llvm.org/docs/LibFuzzer.html) for mor
 To quickly get started fuzzing Zeo Core using [`afl-fuzz`](https://github.com/google/afl):
 
 ```sh
-$ git clone https://github.com/zeo/zeo
+$ git clone https://github.com/dev-zeo/zeo
 $ cd zeo/
 $ git clone https://github.com/google/afl
 $ make -C afl/

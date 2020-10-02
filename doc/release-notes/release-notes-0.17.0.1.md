@@ -6,7 +6,7 @@ This release provides a minor bug fix for 0.17.0.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/zeo/zeo/issues>
+  <https://github.com/dev-zeo/zeo/issues>
 
 To receive security and update notifications, please subscribe to:
 

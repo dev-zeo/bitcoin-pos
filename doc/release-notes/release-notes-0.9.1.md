@@ -13,7 +13,7 @@ hostile hosts.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/zeo/zeo/issues
+  https://github.com/dev-zeo/zeo/issues
 
 How to Upgrade
 --------------

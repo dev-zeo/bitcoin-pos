@@ -262,7 +262,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/zeo/zeo/issues"
+#define PACKAGE_BUGREPORT "https://github.com/dev-zeo/zeo/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Zeo Core"

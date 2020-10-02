@@ -12,7 +12,7 @@ improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/zeo/zeo/issues>
+  <https://github.com/dev-zeo/zeo/issues>
 
 To receive security and update notifications, please subscribe to:
 
@@ -92,7 +92,7 @@ Notification changes
 removed from the mempool because they conflict with a new block. These
 notifications were sent previously before the v0.19 release, but had been
 broken since that release (bug
-[#18325](https://github.com/zeo/zeo/issues/18325)).
+[#18325](https://github.com/dev-zeo/zeo/issues/18325)).
 
 PSBT changes
 ------------

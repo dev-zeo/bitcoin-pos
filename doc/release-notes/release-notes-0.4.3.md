@@ -6,7 +6,7 @@ This is a bugfix-only release based on 0.4.0.
 Please note that the wxZeo GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
 
 Please report bugs for the daemon only using the issue tracker at github:
-https://github.com/zeo/zeo/issues
+https://github.com/dev-zeo/zeo/issues
 
 Stable source code is hosted at Gitorious:
 http://gitorious.org/zeo/zeod-stable/archive-tarball/v0.4.3#.tar.gz

@@ -4,7 +4,7 @@ Zeo version 0.7.2 is now available from:
 This is a bug-fix minor release.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/zeo/zeo/issues
+  https://github.com/dev-zeo/zeo/issues
 
 How to Upgrade
 --------------

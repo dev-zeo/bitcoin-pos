@@ -15,7 +15,7 @@ merging pull requests as well as a "lead maintainer" who is responsible for the
 release cycle, overall merging, moderation and appointment of maintainers.
 
 If you're looking for somewhere to start contributing, check out the
-[good first issue](https://github.com/zeo/zeo/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+[good first issue](https://github.com/dev-zeo/zeo/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 list or participate in a weekly [Zeo Core PR Review Club](https://zeocore.reviews/) meeting.
 
 Communication Channels
@@ -101,7 +101,7 @@ Examples:
     log: Fix typo in log message
 
 Note that translations should not be submitted as pull requests. Please see
-[Translation Process](https://github.com/zeo/zeo/blob/master/doc/translation_process.md)
+[Translation Process](https://github.com/dev-zeo/zeo/blob/master/doc/translation_process.md)
 for more information on helping with translations.
 
 If a pull request is not to be considered for merging (yet), please
@@ -343,7 +343,7 @@ Rebased-From: <commit hash of the original commit>
 ```
 
 Have a look at [an example backport PR](
-https://github.com/zeo/zeo/pull/16189).
+https://github.com/dev-zeo/zeo/pull/16189).
 
 Also see the [backport.py script](
 https://github.com/zeo-core/zeo-maintainer-tools#backport).

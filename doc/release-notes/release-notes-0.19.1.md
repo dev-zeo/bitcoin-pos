@@ -10,7 +10,7 @@ improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/zeo/zeo/issues>
+  <https://github.com/dev-zeo/zeo/issues>
 
 To receive security and update notifications, please subscribe to:
 

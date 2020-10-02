@@ -7,7 +7,7 @@ bug fixes.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/zeo/zeo/issues
+  https://github.com/dev-zeo/zeo/issues
 
 Upgrading and downgrading
 =========================
@@ -230,7 +230,7 @@ bindings such as [python-zeolib](https://pypi.python.org/pypi/python-zeolib) or
 alternative node implementations.
 
 This library is called `libzeoconsensus.so` (or, `.dll` for Windows).
-Its interface is defined in the C header [zeoconsensus.h](https://github.com/zeo/zeo/blob/0.10/src/script/zeoconsensus.h).
+Its interface is defined in the C header [zeoconsensus.h](https://github.com/dev-zeo/zeo/blob/0.10/src/script/zeoconsensus.h).
 
 In its initial version the API includes two functions:
 

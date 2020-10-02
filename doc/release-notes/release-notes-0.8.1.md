@@ -5,7 +5,7 @@ This is a maintenance release that adds a new network rule to avoid
 a chain-forking incompatibility with versions 0.7.2 and earlier.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/zeo/zeo/issues
+  https://github.com/dev-zeo/zeo/issues
 
 
 How to Upgrade

@@ -98,7 +98,7 @@ pushd "$TARGET" || exit 1
           exit 1
         fi
 
-        git clone https://github.com/zeo/zeo "$tag"
+        git clone https://github.com/dev-zeo/zeo "$tag"
         pushd "$tag" || exit 1
         {
           git checkout "$tag"
