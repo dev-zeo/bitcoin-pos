@@ -26,13 +26,13 @@ def setup():
         programs += ['apt-cacher-ng', 'lxc', 'debootstrap']
     subprocess.check_call(['sudo', 'apt-get', 'install', '-qq'] + programs)
     if not os.path.isdir('gitian.sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/zeo-core/gitian.sigs.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/dev-zeo/gitian.sigs.git'])
     if not os.path.isdir('zeo-detached-sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/zeo-core/zeo-detached-sigs.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/dev-zeo/zeo-detached-sigs.git'])
     if not os.path.isdir('gitian-builder'):
         subprocess.check_call(['git', 'clone', 'https://github.com/devrandom/gitian-builder.git'])
     if not os.path.isdir('zeo'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/zeo/zeo.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/dev-zeo/zeo.git'])
     os.chdir('gitian-builder')
     make_image_prog = ['bin/make-base-vm', '--suite', 'bionic', '--arch', 'amd64']
     if args.docker:

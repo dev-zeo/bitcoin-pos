@@ -22,7 +22,7 @@ libtool
 pkg-config
 python37
 
-git clone https://github.com/zeo/zeo.git
+git clone https://github.com/dev-zeo/zeo.git
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.

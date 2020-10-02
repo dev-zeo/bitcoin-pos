@@ -72,7 +72,7 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/zeo/zeo.git
+    git clone https://github.com/dev-zeo/zeo.git
     cd zeo
 
 ## Building for 64-bit Windows
