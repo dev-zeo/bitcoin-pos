@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The coinBit Core developers
+// Copyright (c) 2009-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -686,9 +686,8 @@ bool MemPoolAccept::PreChecks(ATMPArgs& args, Workspace& ws)
     }
 
     // Check for non-standard pay-to-script-hash in inputs
-    if (fRequireStandard && !AreInputsStandard(tx, m_view)) {
-        return state.Invalid(TxValidationResult::TX_INPUTS_NOT_STANDARD, "bad-txns-nonstandard-inputs");
-    }
+   if (fRequireStandard && !AreInputsStandard(tx, m_view))
+        return state.Invalid(TxValidationResult::TX_NOT_STANDARD, "bad-txns-nonstandard-inputs");
 
     // Check for non-standard witness in P2WSH
     if (tx.HasWitness() && fRequireStandard && !IsWitnessStandard(tx, m_view))
@@ -1298,8 +1297,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         // Force block reward to zero when right shift is undefined.
         if (halvings >= 64)
             return 0;
-
-        CAmount nSubsidy = 50 * COIN;
+            
         // Subsidy is cut in half every 831,600 blocks
         nSubsidy >>= halvings;
         return nSubsidy;

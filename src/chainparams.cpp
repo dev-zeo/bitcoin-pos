@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The coinBit Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,6 @@
 #include <util/system.h>
 #include <util/strencodings.h>
 #include <versionbitsinfo.h>
-#include <arith_uint256.h>
 
 #include <assert.h>
 
@@ -103,22 +102,9 @@ public:
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 2;
         m_assumed_chain_state_size = 1;
-        /*uint32_t nounce = 294931;
-        genesis = CreateGenesisBlock(1601628512, nounce, 0x1e0fffff, 1, 50 * COIN);
-        printf("genesis.nounce = %i\n", nounce);
-        bool check =  CheckProofOfWork(genesis.GetHash(), 0x1e0fffff, consensus, false);
 
-        while (check == false)
-        {   
-            nounce++;
-            genesis = CreateGenesisBlock(1601628512, nounce, 0x1e0fffff, 1, 50 * COIN);
-            check =  CheckProofOfWork(genesis.GetHash(), 0x1e0fffff, consensus, false);
-            printf("genesis.nounce = %i with hash %s\n", nounce, genesis.GetHash().ToString().c_str());
-
-        }*/
 
         genesis = CreateGenesisBlock(1601628512, 1831080, 0x1e0fffff, 1, 50 * COIN);
-       // printf("hashMerkleRoothash %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8"));
@@ -164,24 +150,6 @@ public:
             /* nTxCount  269970,*/
             /* dTxRate   0.06961917921120889,*/
         };
-    }
-    bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params, bool fProofOfStake)
-    {
-        bool fNegative;
-        bool fOverflow;
-        arith_uint256 bnTarget;
-
-        bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
-
-        // Check range
-        if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit))
-            return false;
-
-        // Check proof of work matches claimed amount
-        if (UintToArith256(hash) > bnTarget)
-            return false;
-
-        return true;
     }
 };
 
