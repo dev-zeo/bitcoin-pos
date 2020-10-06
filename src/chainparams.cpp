@@ -65,8 +65,8 @@ public:
         consensus.MinBIP9WarningHeight = consensus.SegwitHeight + consensus.nMinerConfirmationWindow;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 10 * 3 * 60; // every 10 blocks
-        consensus.nPowTargetSpacing = 3 * 60;
+        consensus.nPowTargetTimespan = 10 * 2 * 60; // every 10 blocks
+        consensus.nPowTargetSpacing = 2 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.fPoSNoRetargeting = false;
@@ -171,8 +171,8 @@ public:
         consensus.MinBIP9WarningHeight = consensus.SegwitHeight + consensus.nMinerConfirmationWindow;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 10 * 3 * 60; // every 10 blocks
-        consensus.nPowTargetSpacing = 3 * 60;
+        consensus.nPowTargetTimespan = 10 * 2 * 60; // every 10 blocks
+        consensus.nPowTargetSpacing = 2 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.fPoSNoRetargeting = false;
@@ -195,9 +195,9 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00"); // 0
 
-        pchMessageStart[0] = 0xab;
-        pchMessageStart[1] = 0x67;
-        pchMessageStart[2] = 0xd7;
+        pchMessageStart[0] = 0xba;
+        pchMessageStart[1] = 0x78;
+        pchMessageStart[2] = 0x7d;
         pchMessageStart[3] = 0x5c;
         nDefaultPort = 48832;
         nPruneAfterHeight = 1000;
