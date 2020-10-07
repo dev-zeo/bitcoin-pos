@@ -54,7 +54,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = CBaseChainParams::MAIN;
-        consensus.nSubsidyHalvingInterval = 700000;
+        consensus.nSubsidyHalvingInterval = 262800;
         consensus.BIP16Exception = uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8");
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8");
@@ -72,13 +72,14 @@ public:
         consensus.fPoSNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
-        consensus.nLastPOWBlock = 1000;
+        consensus.nLastPOWBlock = 721;
         consensus.nMPoSRewardRecipients = 10;
         consensus.nFirstMPoSBlock = consensus.nLastPOWBlock + 
                                     consensus.nMPoSRewardRecipients + 
                                     COINBASE_MATURITY;
         consensus.nEnableHeaderSignatureHeight = 0;
         consensus.nCheckpointSpan = COINBASE_MATURITY;
+        consensus.maxMintProofOfStake = 0.05;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -160,7 +161,7 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = CBaseChainParams::TESTNET;
-        consensus.nSubsidyHalvingInterval = 700000;
+        consensus.nSubsidyHalvingInterval = 150;
         consensus.BIP16Exception = uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8");
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8");
@@ -178,13 +179,14 @@ public:
         consensus.fPoSNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; 
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
-        consensus.nLastPOWBlock = 501;
+        consensus.nLastPOWBlock = 400;
         consensus.nMPoSRewardRecipients = 10;
         consensus.nFirstMPoSBlock = consensus.nLastPOWBlock + 
                                     consensus.nMPoSRewardRecipients + 
                                     COINBASE_MATURITY;
         consensus.nEnableHeaderSignatureHeight = 0;
         consensus.nCheckpointSpan = COINBASE_MATURITY;
+        consensus.maxMintProofOfStake = 0.05;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -273,6 +275,7 @@ public:
         consensus.nFirstMPoSBlock = 5000;
         consensus.nEnableHeaderSignatureHeight = 0;
         consensus.nCheckpointSpan = COINBASE_MATURITY;
+        consensus.maxMintProofOfStake = 0.05;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
