@@ -160,7 +160,7 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = CBaseChainParams::TESTNET;
-        consensus.nSubsidyHalvingInterval = 150;
+        consensus.nSubsidyHalvingInterval = 1000;
         consensus.BIP16Exception = uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8");
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8");
