@@ -196,8 +196,8 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00"); // 0
 
-        pchMessageStart[0] = 0xba;
-        pchMessageStart[1] = 0x78;
+        pchMessageStart[0] = 0xcf;
+        pchMessageStart[1] = 0x54;
         pchMessageStart[2] = 0x7d;
         pchMessageStart[3] = 0x5c;
         nDefaultPort = 48832;
