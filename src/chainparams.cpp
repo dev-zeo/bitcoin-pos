@@ -245,9 +245,9 @@ public:
         };
         //getchaintxstats 29999 a26bba5b33e132c62ec32ebca9a0c05edaa389788f97334be43fc03d81ea0a3a
         chainTxData = ChainTxData{
-            nTime     1602643200,
-            nTxCount  59626,
-            dTxRate   0.1214840351509891
+           /* nTime */     1602643200,
+           /* nTxCount */  59626,
+           /* dTxRate */   0.1214840351509891
         };
     }
 };
