@@ -1295,7 +1295,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     } else {
         int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
         CAmount currentYearSupply = PREMINE_COIN;
-        int mintProofOfStake = consensusParams.maxMintProofOfStake; // 50%
+        int64_t mintProofOfStake = consensusParams.maxMintProofOfStake; // 50%
         for(int i = 0; i < halvings; i++) {
             mintProofOfStake = consensusParams.maxMintProofOfStake;
             // Inflation rate is cut in half every 1051200 blocks which will occur approximately every 4 years, year 0 exclude.

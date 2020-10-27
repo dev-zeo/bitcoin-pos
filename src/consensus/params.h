@@ -86,7 +86,7 @@ struct Params {
     bool fPoSNoRetargeting;
     int nLastPOWBlock;
     int nFirstMPoSBlock;
-    int maxMintProofOfStake;
+    int64_t maxMintProofOfStake;
     int nMPoSRewardRecipients;
     int nEnableHeaderSignatureHeight;
     /** Block sync-checkpoint span*/
