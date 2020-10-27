@@ -79,7 +79,7 @@ public:
                                     COINBASE_MATURITY;
         consensus.nEnableHeaderSignatureHeight = 0;
         consensus.nCheckpointSpan = COINBASE_MATURITY;
-        consensus.maxMintProofOfStake = 0.05;
+        consensus.maxMintProofOfStake = 50; // 50% inflation rate per year
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -96,8 +96,8 @@ public:
          * a large 32-bit integer with any alignment.
          */
         pchMessageStart[0] = 0xde;
-        pchMessageStart[1] = 0x1a;
-        pchMessageStart[2] = 0x4f;
+        pchMessageStart[1] = 0xb7;
+        pchMessageStart[2] = 0xaf;
         pchMessageStart[3] = 0x9d;
         nDefaultPort = 48830;
         nPruneAfterHeight = 100000;
@@ -185,7 +185,7 @@ public:
                                     COINBASE_MATURITY;
         consensus.nEnableHeaderSignatureHeight = 0;
         consensus.nCheckpointSpan = COINBASE_MATURITY;
-        consensus.maxMintProofOfStake = 0.05;
+        consensus.maxMintProofOfStake = 50;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -196,10 +196,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0xc6398e72fd8ca57fe6d02246f4528c9f6dd0f222370992d2050507414d44c477"); // 0
 
-        pchMessageStart[0] = 0xcf;
-        pchMessageStart[1] = 0x54;
-        pchMessageStart[2] = 0x7d;
-        pchMessageStart[3] = 0x5c;
+        pchMessageStart[0] = 0xac;
+        pchMessageStart[1] = 0xe4;
+        pchMessageStart[2] = 0x7a;
+        pchMessageStart[3] = 0x7b;
         nDefaultPort = 48832;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 40;
@@ -213,10 +213,10 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        /*vSeeds.emplace_back("testnet-seed1.zeocoin.org");
-        vSeeds.emplace_back("testnet-seed2.zeocoin.org");*/
         vSeeds.emplace_back("testnet-seed3.tokl.io");
         vSeeds.emplace_back("testnet-seed4.tokl.io");
+        vSeeds.emplace_back("testnet-seed1.zeocoin.org");
+        vSeeds.emplace_back("testnet-seed2.zeocoin.org");
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,127);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,130);
@@ -234,20 +234,20 @@ public:
 
         checkpointData = {
            {
-                {0, uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8")},
+                {0, uint256S("0x00000d874f3789bec03e7415367aff461640012fff7092174a2186831cc1e3f8")}/*,
                 {1000, uint256S("0xce8253603a2e695cabb51935e935ca948336cf499028829a6045c4ba131bf904")},
                 {5000, uint256S("0xbaa7632eb7e82a1811b986943572ac0bdf6f6b26a100a6f37586aee0330db3eb")},
                 {10000, uint256S("0x23701938ea617794b4851adfd72f73ed214a85fc103aab8491c3095f951719e5")},
                 {20000, uint256S("0xc6398e72fd8ca57fe6d02246f4528c9f6dd0f222370992d2050507414d44c477")},
-                {30000, uint256S("0xa26bba5b33e132c62ec32ebca9a0c05edaa389788f97334be43fc03d81ea0a3a")}
+                {30000, uint256S("0xa26bba5b33e132c62ec32ebca9a0c05edaa389788f97334be43fc03d81ea0a3a")}*/
 
             }
         };
         //getchaintxstats 29999 a26bba5b33e132c62ec32ebca9a0c05edaa389788f97334be43fc03d81ea0a3a
         chainTxData = ChainTxData{
-           /* nTime */     1602643200,
-           /* nTxCount */  59626,
-           /* dTxRate */   0.1214840351509891
+           /* nTime *     1602643200,*/
+           /* nTxCount *  59626,*/
+           /* dTxRate *   0.1214840351509891*/
         };
     }
 };

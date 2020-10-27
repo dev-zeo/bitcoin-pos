@@ -1295,10 +1295,15 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     } else {
         int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
         CAmount currentYearSupply = PREMINE_COIN;
+        int mintProofOfStake = consensusParams.maxMintProofOfStake; // 50%
         for(int i = 0; i < halvings; i++) {
-            currentYearSupply = currentYearSupply + (currentYearSupply * consensusParams.maxMintProofOfStake);
+            mintProofOfStake = consensusParams.maxMintProofOfStake;
+            // Inflation rate is cut in half every 1051200 blocks which will occur approximately every 4 years, year 0 exclude.
+            int inflationHalvings = (nHeight / (consensusParams.nSubsidyHalvingInterval * 4)) + 1; 
+            mintProofOfStake >>= inflationHalvings;
+            currentYearSupply = currentYearSupply + (currentYearSupply * (mintProofOfStake/100));
         }
-        nSubsidy = (currentYearSupply * consensusParams.maxMintProofOfStake) / consensusParams.nSubsidyHalvingInterval;            
+        nSubsidy = (currentYearSupply * (mintProofOfStake/100)) / consensusParams.nSubsidyHalvingInterval;            
     }    
     return nSubsidy;
 }
