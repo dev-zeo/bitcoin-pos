@@ -1295,16 +1295,26 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     } else {
         int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
         CAmount currentYearSupply = PREMINE_COIN;
-        int64_t mintProofOfStake = consensusParams.maxMintProofOfStake; // 50%
-        for(int i = 0; i < halvings; i++) {
-            mintProofOfStake = consensusParams.maxMintProofOfStake;
-            // Inflation rate is cut in half every 1051200 blocks which will occur approximately every 4 years, year 0 exclude.
-            int inflationHalvings = (nHeight / (consensusParams.nSubsidyHalvingInterval * 4)) + 1; 
-            mintProofOfStake >>= inflationHalvings;
-            currentYearSupply = currentYearSupply + (currentYearSupply * (mintProofOfStake/100));
+        double mintProofOfStake = consensusParams.maxMintProofOfStake; 
+        // Inflation rate is cut in half every 1051200 blocks which will occur approximately every 4 years, year 0 exclude.
+        if(halvings != 0){
+            int inflationHalvings;
+            for(int i = 0; i < halvings; i++) {
+                if(i == 0){
+                    currentYearSupply = currentYearSupply + (PREMINE_COIN * consensusParams.maxMintProofOfStake);
+                }else {
+                    inflationHalvings = (((i*consensusParams.nSubsidyHalvingInterval) - consensusParams.nSubsidyHalvingInterval) / (consensusParams.nSubsidyHalvingInterval * 4)); 
+                    mintProofOfStake = consensusParams.maxMintProofOfStake / pow(2, (inflationHalvings+1));
+                    currentYearSupply = currentYearSupply + (currentYearSupply * mintProofOfStake);
+                }
+            }
+            inflationHalvings = ((nHeight - consensusParams.nSubsidyHalvingInterval) / (consensusParams.nSubsidyHalvingInterval * 4)); 
+            mintProofOfStake = consensusParams.maxMintProofOfStake / pow(2, (inflationHalvings+1));
         }
-        nSubsidy = (currentYearSupply * (mintProofOfStake/100)) / consensusParams.nSubsidyHalvingInterval;            
+        nSubsidy = (currentYearSupply * mintProofOfStake) / consensusParams.nSubsidyHalvingInterval;      
+        //LogPrintf("halvings = %s - nHeight = %s - currentYearSupply = %s - mintProofOfStake = %s - Block reward = %s\n", halvings, nHeight, currentYearSupply, mintProofOfStake, nSubsidy);  
     }    
+
     return nSubsidy;
 }
 
