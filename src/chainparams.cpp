@@ -120,8 +120,11 @@ public:
         vSeeds.emplace_back("seed2.zeocoin.org");
         vSeeds.emplace_back("seed3.zeocoin.org");
         vSeeds.emplace_back("seed4.zeocoin.org");
-        vSeeds.emplace_back("seed5.tokl.io");
-        vSeeds.emplace_back("seed6.tokl.io");
+        vSeeds.emplace_back("seed5.zeocoin.org");
+        vSeeds.emplace_back("seed6.zeocoin.org");
+        vSeeds.emplace_back("seed7.zeocoin.org");
+        vSeeds.emplace_back("seed8.zeocoin.org");
+        vSeeds.emplace_back("seed9.zeocoin.org");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,80);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,142);
