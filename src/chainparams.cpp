@@ -72,7 +72,7 @@ public:
         consensus.fPoSNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
-        consensus.nLastPOWBlock = 721;
+        consensus.nLastPOWBlock = 3600;
         consensus.nMPoSRewardRecipients = 10;
         consensus.nFirstMPoSBlock = consensus.nLastPOWBlock + 
                                     consensus.nMPoSRewardRecipients + 
@@ -95,10 +95,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xda;
-        pchMessageStart[1] = 0xb7;
-        pchMessageStart[2] = 0xaf;
-        pchMessageStart[3] = 0x9d;
+        pchMessageStart[0] = 0xab;
+        pchMessageStart[1] = 0xe4;
+        pchMessageStart[2] = 0xc2;
+        pchMessageStart[3] = 0xd9;
         nDefaultPort = 48830;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 2;
