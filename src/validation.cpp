@@ -1293,26 +1293,31 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if (nHeight == 1)  {
         nSubsidy = PREMINE_COIN;
     } else {
-        int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-        CAmount currentYearSupply = PREMINE_COIN;
-        double mintProofOfStake = consensusParams.maxMintProofOfStake; 
-        // Inflation rate is cut in half every 1051200 blocks which will occur approximately every 4 years, year 0 exclude.
-        if(halvings != 0){
-            int inflationHalvings;
-            for(int i = 0; i < halvings; i++) {
-                if(i == 0){
-                    currentYearSupply = currentYearSupply + (PREMINE_COIN * consensusParams.maxMintProofOfStake);
-                }else {
-                    inflationHalvings = (((i*consensusParams.nSubsidyHalvingInterval) - consensusParams.nSubsidyHalvingInterval) / (consensusParams.nSubsidyHalvingInterval * 4)); 
-                    mintProofOfStake = consensusParams.maxMintProofOfStake / pow(2, (inflationHalvings+1));
-                    currentYearSupply = currentYearSupply + (currentYearSupply * mintProofOfStake);
+        if(nHeight <= consensusParams.nLastPOWBlock) {
+            nSubsidy = 50 * COIN;
+        }else {
+            int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+            CAmount currentYearSupply = PREMINE_COIN;
+            double mintProofOfStake = consensusParams.maxMintProofOfStake; 
+            // Inflation rate is cut in half every 1051200 blocks which will occur approximately every 4 years, year 0 exclude.
+            if(halvings != 0){
+                int inflationHalvings;
+                for(int i = 0; i < halvings; i++) {
+                    if(i == 0){
+                        currentYearSupply = currentYearSupply + (PREMINE_COIN * consensusParams.maxMintProofOfStake);
+                    }else {
+                        inflationHalvings = (((i*consensusParams.nSubsidyHalvingInterval) - consensusParams.nSubsidyHalvingInterval) / (consensusParams.nSubsidyHalvingInterval * 4)); 
+                        mintProofOfStake = consensusParams.maxMintProofOfStake / pow(2, (inflationHalvings+1));
+                        currentYearSupply = currentYearSupply + (currentYearSupply * mintProofOfStake);
+                    }
                 }
+                inflationHalvings = ((nHeight - consensusParams.nSubsidyHalvingInterval) / (consensusParams.nSubsidyHalvingInterval * 4)); 
+                mintProofOfStake = consensusParams.maxMintProofOfStake / pow(2, (inflationHalvings+1));
             }
-            inflationHalvings = ((nHeight - consensusParams.nSubsidyHalvingInterval) / (consensusParams.nSubsidyHalvingInterval * 4)); 
-            mintProofOfStake = consensusParams.maxMintProofOfStake / pow(2, (inflationHalvings+1));
+            nSubsidy = (currentYearSupply * mintProofOfStake) / consensusParams.nSubsidyHalvingInterval;      
+            //LogPrintf("halvings = %s - nHeight = %s - currentYearSupply = %s - mintProofOfStake = %s - Block reward = %s\n", halvings, nHeight, currentYearSupply, mintProofOfStake, nSubsidy);  
         }
-        nSubsidy = (currentYearSupply * mintProofOfStake) / consensusParams.nSubsidyHalvingInterval;      
-        //LogPrintf("halvings = %s - nHeight = %s - currentYearSupply = %s - mintProofOfStake = %s - Block reward = %s\n", halvings, nHeight, currentYearSupply, mintProofOfStake, nSubsidy);  
+        
     }    
 
     return nSubsidy;
