@@ -168,8 +168,8 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;ALLE IHRE ZEOS VERLIEREN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;ALLE IHRE ZEO VERLIEREN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,7 +188,7 @@
         <translation>Geben Sie die alte und die neue Wallet-Passphrase ein.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>Beachten Sie, dass das Verschlüsseln Ihrer Wallet nicht komplett vor Diebstahl Ihrer Zeos durch Malware schützt, die Ihren Computer infiziert hat.</translation>
     </message>
     <message>
@@ -1026,7 +1026,7 @@
         <translation>Neueste Transaktionen werden eventuell noch nicht angezeigt, daher könnte Ihr Kontostand veraltet sein. Er wird korrigiert, sobald Ihr Wallet die Synchronisation mit dem Zeo-Netzwerk erfolgreich abgeschlossen hat. Details dazu finden sich weiter unten.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Versuche, Zeos aus noch nicht angezeigten Transaktionen auszugeben, werden vom Netzwerk nicht akzeptiert.</translation>
     </message>
     <message>
@@ -2548,7 +2548,7 @@ Hinweis: Eine Gebühr von "100 Satoshis pro kB" bei einer Größe der Transaktio
         <translation>Zu sendender Betrag in der ausgewählten Einheit</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Die Gebühr wird vom zu überweisenden Betrag abgezogen. Der Empfänger wird also weniger Zeos erhalten, als Sie im Betrags-Feld eingegeben haben. Falls mehrere Empfänger ausgewählt wurden, wird die Gebühr gleichmäßig verteilt.</translation>
     </message>
     <message>
@@ -2610,7 +2610,7 @@ Hinweis: Eine Gebühr von "100 Satoshis pro kB" bei einer Größe der Transaktio
         <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Sie können Nachrichten/Vereinbarungen mit Hilfe Ihrer Adressen signieren, um zu beweisen, dass Sie Zeos empfangen können, die an diese Adressen überwiesen werden. Seien Sie vorsichtig und signieren Sie nichts Vages oder Willkürliches, um Ihre Indentität vor Phishingangriffen zu schützen. Signieren Sie nur vollständig-detaillierte Aussagen, mit denen Sie auch einverstanden sind.</translation>
     </message>
     <message>

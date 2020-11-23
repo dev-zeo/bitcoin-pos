@@ -168,8 +168,8 @@
         <translation>Confirmar el cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde la contraseña, perderá ¡&lt;b&gt;TODOS SUS ZEOS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde la contraseña, perderá ¡&lt;b&gt;TODOS SUS ZEO&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Introduzca la contraseña antigua y la nueva para el monedero.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
-        <translation>Recuerde que cifrar su monedero no garantiza mantener a salvo sus zeos en caso de tener virus en el computador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
+        <translation>Recuerde que cifrar su monedero no garantiza mantener a salvo sus zeo en caso de tener virus en el computador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -1026,8 +1026,8 @@
         <translation>Es posible que las transacciones recientes aún no estén visibles y, por lo tanto, el saldo de su monedero podría ser incorrecto. Esta información será correcta una vez que su monedero haya terminado de sincronizarse con la red zeo, como se detalla a continuación.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>La red no aceptará intentar gastar zeos que se vean afectados por transacciones aún no mostradas.</translation>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>La red no aceptará intentar gastar zeo que se vean afectados por transacciones aún no mostradas.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -2540,8 +2540,8 @@ Nota: Dado que la comisión se calcula por byte, una comisión de "100 satoshis 
         <translation>El monto a enviar en las unidades seleccionadas</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La comisión será deducida de la cantidad enviada. El destinatario recibirá menos zeos que la cantidad introducida en el campo Cantidad. Si hay varios destinatarios seleccionados, la comisión será distribuida a partes iguales.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La comisión será deducida de la cantidad enviada. El destinatario recibirá menos zeo que la cantidad introducida en el campo Cantidad. Si hay varios destinatarios seleccionados, la comisión será distribuida a partes iguales.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2602,7 +2602,7 @@ Nota: Dado que la comisión se calcula por byte, una comisión de "100 satoshis 
         <translation>&amp;Firmar mensaje</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Puede firmar los mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa de manera vaga o aleatoria, pues los ataques de phishing pueden tratar de engañarle firmando su identidad a través de ellos. Sólo firme declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
     </message>
     <message>

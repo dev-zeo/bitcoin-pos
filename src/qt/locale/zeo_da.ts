@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Vælg adresse at sende zeos til</translation>
+        <translation>Vælg adresse at sende zeo til</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Vælg adresse at modtage zeos med</translation>
+        <translation>Vælg adresse at modtage zeo med</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Zeo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine Zeo-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender zeos.</translation>
+        <translation>Disse er dine Zeo-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender zeo.</translation>
     </message>
     <message>
         <source>These are your Zeo addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
@@ -168,8 +168,8 @@
         <translation>Bekræft tegnebogskryptering</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE ZEOS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
+        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE ZEO&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Indtast den gamle adgangskode og en ny adgangskode til tegnebogen.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
-        <translation>Husk, at kryptere din tegnebog vil ikke fuldt ud beskytte dine zeos mod at blive stjålet af malware på din computer.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
+        <translation>Husk, at kryptere din tegnebog vil ikke fuldt ud beskytte dine zeo mod at blive stjålet af malware på din computer.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Send coins to a Zeo address</source>
-        <translation>Send zeos til en Zeo-adresse</translation>
+        <translation>Send zeo til en Zeo-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1026,7 +1026,7 @@
         <translation>Nylige transaktioner er måske ikke synlige endnu, og derfor kan din tegnebogs saldo være ukorrekt. Denne information vil være korrekt, når din tegnebog er færdig med at synkronisere med zeo-netværket, som detaljerne herunder viser.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Forsøg på at bruge zeo, som er indeholdt i endnu-ikke-viste transaktioner, accepteres ikke af netværket.</translation>
     </message>
     <message>
@@ -1312,7 +1312,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af zeos.</translation>
+        <translation>Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af zeo.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2166,7 +2166,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send zeos</translation>
+        <translation>Send zeo</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2402,7 +2402,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bekræft afsendelse af zeos</translation>
+        <translation>Bekræft afsendelse af zeo</translation>
     </message>
     <message>
         <source>Confirm transaction proposal</source>
@@ -2524,7 +2524,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
         <translation>Beløbet der skal afsendes i den valgte enhed</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Gebyret vil blive trukket fra det sendte beløb. Modtageren vil modtage færre zeo, end du indtaster i beløbfeltet. Hvis flere modtagere vælges, vil gebyret deles ligeligt.</translation>
     </message>
     <message>
@@ -2586,7 +2586,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
         <translation>&amp;Singér besked</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Du kan signere beskeder/aftaler med dine adresser for at bevise, at du kan modtage zeo, der bliver sendt til adresserne. Vær forsigtig med ikke at signere noget vagt eller tilfældigt, da eventuelle phishing-angreb kan snyde dig til at overlade din identitet til dem. Signér kun fuldt ud detaljerede udsagn, som du er enig i.</translation>
     </message>
     <message>
@@ -2877,7 +2877,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Minede zeos skal modne %1 blokke, før de kan bruges. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det ikke lykkes at få den i kæden, vil dens tilstand ændres til “ikke accepteret”, og den vil ikke kunne bruges. Dette kan ske nu og da, hvis en anden knude udvinder en blok inden for nogle få sekunder fra din.</translation>
+        <translation>Minede zeo skal modne %1 blokke, før de kan bruges. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det ikke lykkes at få den i kæden, vil dens tilstand ændres til “ikke accepteret”, og den vil ikke kunne bruges. Dette kan ske nu og da, hvis en anden knude udvinder en blok inden for nogle få sekunder fra din.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3214,7 +3214,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send zeos</translation>
+        <translation>Send zeo</translation>
     </message>
     <message>
         <source>Fee bump error</source>

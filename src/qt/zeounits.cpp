@@ -43,7 +43,7 @@ QString ZeoUnits::longName(int unit)
     case ZEO: return QString("ZEO");
     case mZEO: return QString("mZEO");
     case uZEO: return QString::fromUtf8("µZEO (bits)");
-    case SAT: return QString("Satoshi (sat)");
+    case SAT: return QString("Zatoshi (zat)");
     default: return QString("???");
     }
 }
@@ -53,7 +53,7 @@ QString ZeoUnits::shortName(int unit)
     switch(unit)
     {
     case uZEO: return QString::fromUtf8("bits");
-    case SAT: return QString("sat");
+    case SAT: return QString("zat");
     default: return longName(unit);
     }
 }
@@ -65,7 +65,7 @@ QString ZeoUnits::description(int unit)
     case ZEO: return QString("Zeos");
     case mZEO: return QString("Milli-Zeos (1 / 1" THIN_SP_UTF8 "000)");
     case uZEO: return QString("Micro-Zeos (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case SAT: return QString("Zatoshi (zat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

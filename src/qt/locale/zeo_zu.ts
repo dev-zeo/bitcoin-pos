@@ -128,7 +128,7 @@
         <translation>Qinisekisa ukubethelwa kwe-wallet</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Isexwayiso: Uma ubhala ngemfihlo isikhwama sakho futhi ulahlekelwe umushwana wakho wokungena, uzokwazi
 Lahla YONKE IZEO YAKHO!</translation>
     </message>

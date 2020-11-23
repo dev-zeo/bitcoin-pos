@@ -172,7 +172,7 @@
         <translation>Potrdi šifriranje denarnice</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Opozorilo: V primeru izgube gesla šifrirane denarnice boste &lt;b&gt;IZGUBILI VSE SVOJE ZEOE&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -192,7 +192,7 @@
         <translation>Vnesite staro geslo in novo geslo za denarnico.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>Pomnite, da šifriranje denarnice ne more preprečiti kraje zeoov preko morebitnih virusov na vašem računalniku.</translation>
     </message>
     <message>
@@ -1034,7 +1034,7 @@
         <translation>Zadnje transakcije morda še niso vidne, zato je prikazano stanje v denarnici lahko napačno. Pravilni podatki bodo prikazani, ko bo vaša denarnica končala s sinhronizacijo z zeo omrežjem; glejte podrobnosti spodaj.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Poskusa pošiljanja zeoov, na katere vplivajo še ne prikazane transakcije, omrežje ne bo sprejelo.</translation>
     </message>
     <message>
@@ -2540,7 +2540,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kB" 
         <translation>Znesek za pošiljanje v izbrani enoti</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Znesek plačila bo zmanjšan za znesek provizije. Prejemnik bo prejel manjše število kovancev, kot je bil vnešeni znesek. Če je prejemnikov več, bo provizija med njih enakomerno porazdeljena.</translation>
     </message>
     <message>
@@ -2602,7 +2602,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kB" 
         <translation>&amp;Podpiši sporočilo</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>S svojimi naslovi lahko podpisujete sporočila ali dogovore in s tem dokazujete, da na teh naslovih lahko prejemate kovance. Bodite previdni in ne podpisujte ničesar nejasnega ali naključnega, ker vas zlikovci preko ribarjenja (phishing) lahko prelisičijo, da na njih prepišete svojo identiteto. Podpisujte samo podrobno opisane izjave, s katerimi se strinjate.</translation>
     </message>
     <message>

@@ -168,8 +168,8 @@
         <translation>Confirma el xifratge de la cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
-        <translation>Avís: si xifreu la cartera i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS ZEOS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
+        <translation>Avís: si xifreu la cartera i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS ZEO&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Introduïu la contrasenya antiga i la contrasenya nova a la cartera.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
-        <translation>Recorda que tot i xifrant la teva cartera, els teus zeos no estan completament protegits de robatori a través de programari maliciós que està infectant el teu ordinador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
+        <translation>Recorda que tot i xifrant la teva cartera, els teus zeo no estan completament protegits de robatori a través de programari maliciós que està infectant el teu ordinador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -1027,8 +1027,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation>És possible que les transaccions recents encara no siguin visibles i, per tant, el saldo de la vostra cartera podria ser incorrecte. Aquesta informació serà correcta una vegada que la cartera hagi finalitzat la sincronització amb la xarxa zeo, tal com es detalla més avall.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Els intents de gastar zeos que es veuen afectats per les transaccions que encara no s'hagin mostrat no seran acceptats per la xarxa.</translation>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Els intents de gastar zeo que es veuen afectats per les transaccions que encara no s'hagin mostrat no seran acceptats per la xarxa.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -2533,8 +2533,8 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>L’import a enviar a la unitat seleccionada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys zeos que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys zeo que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2595,8 +2595,8 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>&amp;Signa el missatge</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les zeos que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les zeo que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
         <source>The Zeo address to sign the message with</source>

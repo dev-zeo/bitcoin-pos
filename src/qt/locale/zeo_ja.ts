@@ -168,7 +168,7 @@
         <translation>ウォレットの暗号化の承諾</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>警告: ウォレットの暗号化後にパスフレーズを忘れてしまった場合、&lt;b&gt;あなたの Zeo はすべて失われます&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -189,7 +189,7 @@
         <translation>ウォレット用の旧パスフレーズと新パスフレーズを入力してください。</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>ウォレットを暗号化しても、コンピュータに感染したマルウェアなどによる Zeo の盗難を完全に防ぐことはできないことにご注意ください。</translation>
     </message>
     <message>
@@ -1027,7 +1027,7 @@
         <translation>最近の取引がまだ表示されていない可能性があります。そのため、ウォレットの残高が正しく表示されていないかもしれません。この情報は、ウォレットが Zeo ネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>まだ表示されていない取引が関係する Zeo の使用を試みた場合、ネットワークから認証を受けられません。</translation>
     </message>
     <message>
@@ -2533,7 +2533,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>送金する金額の単位を選択</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>手数料は送金する金額から差し引かれます。送金先には金額欄で指定した額よりも少ない Zeo が送られます。送金先が複数ある場合は、手数料は均等に分けられます。</translation>
     </message>
     <message>
@@ -2595,7 +2595,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>メッセージの署名(&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>あなたが所有しているアドレスでメッセージや契約書に署名をすることで、それらのアドレスへ送られた Zeo を受け取ることができることを証明できます。フィッシング攻撃者があなたを騙して、あなたの身分情報に署名させようとしている可能性があるため、よくわからないものやランダムな文字列に対して署名しないでください。あなたが同意した、よく詳細の記された文言にのみ署名するようにしてください。</translation>
     </message>
     <message>

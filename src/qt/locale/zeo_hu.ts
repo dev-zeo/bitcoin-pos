@@ -168,7 +168,7 @@
         <translation>Tárca titkosításának megerősítése</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Figyelem: Ha titkosítja a tárcáját és elveszíti a jelszavát, akkor &lt;b&gt;AZ ÖSSZES ZEOJA ELVESZIK&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>Írja be a tárca régi és új jelszavát.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>Ne feledd, hogy a tárca titkosítása nem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
     </message>
     <message>
@@ -997,7 +997,7 @@
         <translation>A legutóbbi tranzakciók még lehet, hogy nem láthatók, és így előfordulhat, hogy a tárca egyenlege helytelen. A tárca azon nyomban az aktuális egyenleget fogja mutatni, amint befejezte a zeo hálózattal történő szinkronizációt, amely alább van részletezve.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>A hálózat nem fogadja el azoknak a zeooknak az elköltését, amelyek érintettek a még nem látszódó tranzakciókban.</translation>
     </message>
     <message>
@@ -2359,7 +2359,7 @@
         <translation>Ez a bejegyzés eltávolítása</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Znesek plačila bo zmanjšan za znesek provizije. Prejemnik bo prejel manjše število kovancev, kot je bil vnešeni znesek. Če je prejemnikov več, bo provizija med njih enakomerno porazdeljena.</translation>
     </message>
     <message>
@@ -2421,7 +2421,7 @@
         <translation>Üzenet aláírása...</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>S svojimi naslovi lahko podpisujete sporočila ali pogodbe in s tem dokazujete, da na teh naslovih lahko prejemate kovance. Bodite previdni in ne podpisujte ničesar nejasnega ali naključnega, ker vas zlikovci preko ribarjenja (phishing) lahko prelisičijo, da na njih prepišete svojo identiteto. Podpisujte samo podrobno opisane izjave, s katerimi se strinjate.</translation>
     </message>
     <message>

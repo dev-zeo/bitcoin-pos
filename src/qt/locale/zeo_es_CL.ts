@@ -161,8 +161,8 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Confirmar el cifrado de la billetera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
-        <translation>Advertencia: si encriptas tu billetera y pierdes tu contraseña &lt;b&gt; PIERDES TODOS TUS ZEOS &lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
+        <translation>Advertencia: si encriptas tu billetera y pierdes tu contraseña &lt;b&gt; PIERDES TODOS TUS ZEO &lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -173,8 +173,8 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Billetera encriptada</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
-        <translation>Recuerda que codificando tu billetera no garantiza mantener a salvo tus zeos en caso de tener virus en el computador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
+        <translation>Recuerda que codificando tu billetera no garantiza mantener a salvo tus zeo en caso de tener virus en el computador.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -871,8 +871,8 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Es posible que las transacciones recientes aún no estén visibles y, por lo tanto, el saldo de su billetera podría ser incorrecto. Esta información será correcta una vez que su billetera haya terminado de sincronizarse con la red zeo, como se detalla a continuación.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>La red no aceptará intentar gastar zeos que se vean afectados por transacciones aún no mostradas</translation>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>La red no aceptará intentar gastar zeo que se vean afectados por transacciones aún no mostradas</translation>
     </message>
     <message>
         <source>Number of blocks left</source>

@@ -168,7 +168,7 @@
         <translation>Potwierdź szyfrowanie portfela</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Uwaga: jeśli zaszyfrujesz swój portfel i zgubisz hasło &lt;b&gt;STRACISZ WSZYSTKIE SWOJE ZEOY&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>Wprowadź stare i nowe hasło dla portfela.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>Zwróć uwagę, że zaszyfrowanie portfela nie zabezpieczy się w pełni przed kradzieżą przez malware jakie może zainfekować twój komputer.</translation>
     </message>
     <message>
@@ -1026,7 +1026,7 @@
         <translation>Świeże transakcje mogą nie być jeszcze widoczne, a zatem saldo portfela może być nieprawidłowe. Te detale będą poprawne, gdy portfel zakończy synchronizację z siecią zeo, zgodnie z poniższym opisem.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Próba wydania zeoów które nie są jeszcze wyświetlone jako transakcja zostanie odrzucona przez sieć.</translation>
     </message>
     <message>
@@ -2533,8 +2533,8 @@ Uwaga: Ponieważ opłata jest naliczana za każdy bajt, opłata "100 satoshi za 
         <translation>Kwota do wysłania w wybranej jednostce</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Opłata zostanie odjęta od kwoty wysyłane.Odbiorca otrzyma mniej niż zeos wpisz w polu kwoty. Jeśli wybrano kilku odbiorców, opłata jest podzielona równo.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Opłata zostanie odjęta od kwoty wysyłane.Odbiorca otrzyma mniej niż zeo wpisz w polu kwoty. Jeśli wybrano kilku odbiorców, opłata jest podzielona równo.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2595,7 +2595,7 @@ Uwaga: Ponieważ opłata jest naliczana za każdy bajt, opłata "100 satoshi za 
         <translation>Podpi&amp;sz Wiadomość</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Możesz podpisywać wiadomości swoimi adresami aby udowodnić, że jesteś ich właścicielem. Uważaj, aby nie podpisywać niczego co wzbudza Twoje podejrzenia, ponieważ ktoś może stosować phishing próbując nakłonić Cię do ich podpisania. Akceptuj i podpisuj tylko w pełni zrozumiałe komunikaty i wiadomości.</translation>
     </message>
     <message>

@@ -168,7 +168,7 @@
         <translation>वॉलेट एन्क्रिप्शन की पुष्टि करें</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>चेतावनी: यदि आपने वॉलेट को एन्क्रिप्ट करने के बाद पदबंध खो दी तो &lt;b&gt;आप सारे बिटकॉइन खो देंगे &lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>वॉलेट में पुराना एवं नया सुरक्षा संवाद दर्ज करें ।</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>याद रखें कि अपने बटुए (वॉलेट) एन्क्रिप्ट करना आपके कंप्यूटर को संक्रमित करने वाले मैलवेयर द्वारा आपके बिटकॉइन को चोरी होने से पूरी तरह से सुरक्षित नहीं कर सकता है।</translation>
     </message>
     <message>

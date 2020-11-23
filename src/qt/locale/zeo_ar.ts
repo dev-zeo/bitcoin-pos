@@ -164,7 +164,7 @@
         <translation>تأكيد تشفير المحفظة</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>إذا شفرت محفظتك وفقدت كلمة المرور، ستفقد كل ما تملك من البيتكوين.</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@
         <translation>ادخل كملة المرور القديمة وكلمة المرور الجديدة للمحفظة.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>تذكر أن تشفير محفظتك لا يحمي البيتكوين الخاصة بك بشكل كامل من السرقة من قبل البرامج الخبيثةالتي تصيب حاسوبك</translation>
     </message>
     <message>
@@ -927,7 +927,7 @@
         <translation>قد لا تكون المعاملات الأخيرة مرئية بعد، وبالتالي قد يكون رصيد محفظتك غير صحيح. ستكون هذه المعلومات صحيحة بمجرد الانتهاء من محفظتك مع شبكة البيتكوين، كما هو مفصل أدناه.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>لن تقبل الشبكة محاولة إنفاق البتكوين المتأثرة بالمعاملات التي لم يتم عرضها بعد.</translation>
     </message>
     <message>
@@ -2161,7 +2161,7 @@
         <translation>ازل هذه المداخله</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>سيتم خصم الرسوم من المبلغ الذي يتم إرساله. لذا سوف يتلقى المستلم مبلغ أقل من البتكوين المدخل في حقل المبلغ. في حالة تحديد عدة مستلمين، يتم تقسيم الرسوم بالتساوي.</translation>
     </message>
     <message>

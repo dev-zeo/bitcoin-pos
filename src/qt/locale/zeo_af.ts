@@ -156,8 +156,8 @@
         <translation>Bevestig beursie enkripsie.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
-        <translation>Waarskuwing: As jy jou beursie enkripteer en jou wagwoord verloor, sal jy &lt;b&gt;AL JOU ZEOS VERLOOR&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
+        <translation>Waarskuwing: As jy jou beursie enkripteer en jou wagwoord verloor, sal jy &lt;b&gt;AL JOU ZEO VERLOOR&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -1684,7 +1684,7 @@ Is u seker?</translation>
         <translation>Verwyder hierdie inskrywing</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>De fooi word afgetrek van die gestuurde bedrag.
 Die ontvanger sal minder ontvang as wat u in die 
 bedrag opgee. As daar meer as een ontvanger is,

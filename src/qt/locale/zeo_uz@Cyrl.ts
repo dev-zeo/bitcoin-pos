@@ -160,7 +160,7 @@
         <translation>Ҳамённи кодлашни тасдиқлаш</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА ZEO ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
     </message>
     <message>

@@ -164,7 +164,7 @@
         <translation>Patvirtinkite piniginės užšifravimą</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Dėmesio: jei užšifruosite savo piniginę ir pamesite slaptafrazę, jūs&lt;b&gt;PRARASITE VISUS SAVO ZEOUS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -910,7 +910,7 @@
         <translation>Naujausi sandoriai gali būti dar nematomi, todėl jūsų piniginės likutis gali būti neteisingas. Ši informacija bus teisinga, kai jūsų piniginė bus baigta sinchronizuoti su zeo tinklu, kaip nurodyta žemiau.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Tinklas nepriims bandymų išleisti zeous, kurie yra vis dar nematomi.</translation>
     </message>
     <message>
@@ -2296,7 +2296,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Pašalinti šį įrašą</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Mokestis bus atimamas iš siunčiamos sumos. Gavėjas gaus mažiau zeoų nei įvesite sumos lauke. Jei pasirenkami keli gavėjai, mokestis padalijamas lygiai.</translation>
     </message>
     <message>

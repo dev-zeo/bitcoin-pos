@@ -160,7 +160,7 @@
         <translation>Przituplikuj szyfrowanie portmanyja</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Pozōr: jeźli zaszyfrujesz swōj portmanyj i stracisz hasło &lt;b&gt;STRACISZ WSZYJSKE SWOJE ZEOY&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -862,7 +862,7 @@
         <translation>Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym zeo, zgodnie z miyniōnym ôpisym.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Prōba wydaniŏ zeoōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
     </message>
     <message>

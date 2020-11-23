@@ -168,7 +168,7 @@
         <translation>Konfirmasi pengenkripsian dompet</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Peringatan: Jika Anda mengenkripsi dompet Anda dan lupa kata sandi Anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA ZEO ANDA&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>Masukan passphrase lama dan passphrase baru ke dompet</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>Mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi zeo Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
     </message>
     <message>
@@ -1026,7 +1026,7 @@
         <translation>Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Zeo, seperti rincian berikut.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Usaha untuk menggunakan zeo yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
     </message>
     <message>
@@ -2498,7 +2498,7 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Jumlah yang ingin dikirim dalam unit yang dipilih</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Biaya akan diambil dari jumlah yang dikirim. Penerima akan menerima zeo lebih sedikit daripada yang di masukkan di bidang jumlah. Jika ada beberapa penerima, biaya dibagi rata.</translation>
     </message>
     <message>
@@ -2556,7 +2556,7 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>&amp;Tandakan Pesan</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Anda dapat menandatangani pesan / perjanjian dengan alamat Anda untuk membuktikan bahwa Anda dapat menerima zeo yang dikirimkan kepada mereka. Berhati-hatilah untuk tidak menandatangani apa pun yang samar-samar atau acak, karena serangan phishing mungkin mencoba menipu Anda untuk menandatangani identitas Anda kepada mereka. Hanya tandatangani pernyataan terperinci yang Anda setujui.</translation>
     </message>
     <message>

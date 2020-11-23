@@ -164,7 +164,7 @@
         <translation>Kinnita rahakoti krüpteerimine.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA ZEOID&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@
         <translation>Sisesta rahakoti vana salafraas ja uus salafraas.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
         <translation>Pea meeles, et rahakoti krüpteerimine ei välista zeoide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>

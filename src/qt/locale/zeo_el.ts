@@ -168,7 +168,7 @@
         <translation>Επιβεβαίωσε κρυπτογράφηση πορτοφολιού</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>Προσόχη! Εάν κρυπτογραφήσεις το πορτοφόλι σου και χάσεις τη φράση αποκατάστασης, θα &lt;b&gt; ΧΑΣΕΙΣ ΟΛΑ ΣΟΥ ΤΑ ZEO &lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,8 +188,8 @@
         <translation>Πληκτρολόγησε τον παλιό κωδικό πρόσβασής σου και τον νέο κωδικό πρόσβασής σου για το πορτοφόλι</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
-        <translation>Θυμίσου ότι το να κρυπτογραφείς το πορτοφόλι σου δεν μπορεί να προστατέψει πλήρως τα zeos σου από κλοπή από  κακόβουλο λογισμικό που έχει μολύνει τον υπολογιστή σου</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
+        <translation>Θυμίσου ότι το να κρυπτογραφείς το πορτοφόλι σου δεν μπορεί να προστατέψει πλήρως τα zeo σου από κλοπή από  κακόβουλο λογισμικό που έχει μολύνει τον υπολογιστή σου</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -1018,8 +1018,8 @@
         <translation>Οι πρόσφατες συναλλαγές ενδέχεται να μην είναι ακόμα ορατές και επομένως η ισορροπία του πορτοφολιού σας μπορεί να είναι εσφαλμένη. Αυτές οι πληροφορίες θα είναι σωστές όταν ολοκληρωθεί το συγχρονισμό του πορτοφολιού σας με το δίκτυο Zeo, όπως περιγράφεται παρακάτω.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Η προσπάθεια να δαπανήσετε zeos που επηρεάζονται από τις μη εμφανιζόμενες ακόμη συναλλαγές δεν θα γίνει αποδεκτή από το δίκτυο.</translation>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Η προσπάθεια να δαπανήσετε zeo που επηρεάζονται από τις μη εμφανιζόμενες ακόμη συναλλαγές δεν θα γίνει αποδεκτή από το δίκτυο.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -2516,8 +2516,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Το ποσό που θα αποσταλεί στην επιλεγμένη μονάδα</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Το τέλος θα αφαιρεθεί από το ποσό που αποστέλλεται. Ο παραλήπτης θα λάβει λιγότερα zeos από ό,τι εισάγετε στο πεδίο ποσό. Εάν επιλεγούν πολλοί παραλήπτες, το έξοδο διαιρείται εξίσου.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Το τέλος θα αφαιρεθεί από το ποσό που αποστέλλεται. Ο παραλήπτης θα λάβει λιγότερα zeo από ό,τι εισάγετε στο πεδίο ποσό. Εάν επιλεγούν πολλοί παραλήπτες, το έξοδο διαιρείται εξίσου.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2574,8 +2574,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Μπορείτε να υπογράψετε μηνύματα/συμφωνίες με τις διευθύνσεις σας για να αποδείξετε ότι μπορείτε να λάβετε τα zeos που τους αποστέλλονται. Προσέξτε να μην υπογράψετε τίποτα ασαφές ή τυχαίο, καθώς οι επιθέσεις ηλεκτρονικού "ψαρέματος" ενδέχεται να σας εξαπατήσουν να υπογράψετε την ταυτότητά σας σε αυτούς. Υπογράψτε μόνο πλήρως λεπτομερείς δηλώσεις που συμφωνείτε.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Μπορείτε να υπογράψετε μηνύματα/συμφωνίες με τις διευθύνσεις σας για να αποδείξετε ότι μπορείτε να λάβετε τα zeo που τους αποστέλλονται. Προσέξτε να μην υπογράψετε τίποτα ασαφές ή τυχαίο, καθώς οι επιθέσεις ηλεκτρονικού "ψαρέματος" ενδέχεται να σας εξαπατήσουν να υπογράψετε την ταυτότητά σας σε αυτούς. Υπογράψτε μόνο πλήρως λεπτομερείς δηλώσεις που συμφωνείτε.</translation>
     </message>
     <message>
         <source>The Zeo address to sign the message with</source>

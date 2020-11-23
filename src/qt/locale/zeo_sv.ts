@@ -169,7 +169,7 @@ Försök igen.</translation>
         <translation>Bekräfta kryptering av plånbok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZEO&lt;/b&gt;!</source>
         <translation>VARNING: Om du krypterar din plånbok och glömmer din lösenfras, &lt;b&gt;FÖRLORAR DU ALLA DINA ZEO&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -189,8 +189,8 @@ Försök igen.</translation>
         <translation>Ange den gamla lösenfrasen och den nya lösenfrasen för plånboken.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your zeos from being stolen by malware infecting your computer.</source>
-        <translation>Kom ihåg att kryptering av din plånbok inte helt kan skydda dig från stöld av dina zeos om skadlig kod infekterat din dator.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your zeo from being stolen by malware infecting your computer.</source>
+        <translation>Kom ihåg att kryptering av din plånbok inte helt kan skydda dig från stöld av dina zeo om skadlig kod infekterat din dator.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -1027,7 +1027,7 @@ Försök igen.</translation>
         <translation>Nyligen gjorda transaktioner visas inte korrekt och därför kan din plånboks saldo visas felaktigt. Denna information kommer att visas korrekt så snart din plånbok har synkroniserats med Zeo-nätverket enligt informationen nedan.</translation>
     </message>
     <message>
-        <source>Attempting to spend zeos that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend zeo that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Att försöka spendera zeo som påverkas av transaktioner som ännu inte visas kommer inte accepteras av nätverket.</translation>
     </message>
     <message>
@@ -2493,7 +2493,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>Ta bort denna post</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeos than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att ta emot mindre zeo än du angivit i beloppsfältet. Om flera mottagare väljs kommer avgiften att fördelas jämt.</translation>
     </message>
     <message>
@@ -2555,7 +2555,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>&amp;Signera meddelande</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeos sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive zeo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Du kan signera meddelanden/avtal med dina adresser för att bevisa att du kan ta emot zeo som skickats till dem. Var försiktig så du inte signerar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att signera över din identitet till dem. Signera endast väldetaljerade meddelanden som du godkänner.</translation>
     </message>
     <message>
@@ -3723,7 +3723,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med zeos</translation>
+        <translation>Otillräckligt med zeo</translation>
     </message>
     <message>
         <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
